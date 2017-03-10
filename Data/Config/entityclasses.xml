@@ -259,7 +259,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieScreamer" extends="zombie01">
@@ -299,7 +298,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieMarlene" extends="zombie01">
@@ -319,7 +317,6 @@
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="LootListOnDeath" value="38" />
 </entity_class>
 
 <entity_class name="zombieYo" extends="zombie01">

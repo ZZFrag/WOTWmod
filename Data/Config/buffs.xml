@@ -364,15 +364,15 @@ actions="increment(@wellness, 0.125, 100, 0, 0)" stack="extend" icon="Immunizati
 
 <buff id="splint" overrides="brokenLeg,sprainedLeg" type="speedmodifier" overrideicon="true" icon="ui_game_symbol_splint" name_key="splintedLeg" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
-	<modify id="1" buff="brokenLeg" tickrate="2"/>
-	<modify id="2" buff="sprainedLeg" tickrate="2"/>
+	<modify id="1" buff="brokenLeg" tickrate="3"/>
+	<modify id="2" buff="sprainedLeg" tickrate="3"/>
 </buff>
 
 <buff id="AdvancedSplint" overrides="brokenLeg,sprainedLeg" type="speedmodifier" overrideicon="true" 
 	name_key="Advanced Splint" description_key="You have used a Advanced Splint and are Immune to Sprained Legs" tooltip_key="You have used a Advanced Splint and are immune to Sprained Leg" icon="AdvancedSplintIcon">
 	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
-	<modify id="1" buff="brokenLeg" tickrate="2"/>
-	<modify id="2" buff="sprainedLeg" tickrate="2"/>
+	<modify id="1" buff="brokenLeg" tickrate="3"/>
+	<modify id="2" buff="sprainedLeg" tickrate="3"/>
 </buff>
 	
 <buff id="sprainedLeg" mutex="brokenLeg,AdvancedSplint" type="speedmodifier" duration="2400" actions="debuff(firstAid);debuff(splint)" icon="ui_game_symbol_brokenbone" name_key="sprainedLeg" description_key="sprainedLegDesc" tooltip_key="sprainedLegTooltip" cures="splint,AdvancedSplint">
