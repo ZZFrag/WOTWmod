@@ -301,7 +301,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="gunPowder" count="25"/>
 	<ingredient name="ductTape" count="1"/>
     <ingredient name="wood" count="1"/>
-    <ingredient name="feather" count="1"/>
+    <ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <recipe name="ironCrossbowBolt" count="1">
@@ -321,7 +321,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="gunPowder" count="8"/>
 	<ingredient name="ductTape" count="1"/>
 	<ingredient name="wood" count="1"/>
-	<ingredient name="feather" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
 
 <recipe name="TungstenCrossbowBolt" count="1">
@@ -2718,7 +2718,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="flashlight02" count="1" craft_area="workbench" craft_exp_gain="75">
 	<ingredient name="forgedIron" count="1"/>
 	<ingredient name="partsNailgun_battery" count="1"/>
-	<ingredient name="electricParts" count="10"/>
+	<ingredient name="electricParts" count="7"/>
 	<ingredient name="ductTape" count="4"/>
 	<ingredient name="scrapPlastics" count="4"/>
 </recipe>
@@ -2910,8 +2910,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="shortMetalPipe" count="10"/>
 </recipe>
 
-<recipe name="bedroll" count="1" craft_exp_gain="50">
-	<ingredient name="yuccaFibers" count="20"/>
+<recipe name="bedroll" count="1">
+	<ingredient name="cloth" count="5"/>
+	<ingredient name="cottonPlant" count="10"/>
 </recipe>
 
 <!-- * * * * * * * * * * * * Door/Window Ladders Recipes * * * * * * * * * * * * -->
@@ -3632,6 +3633,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="cabinFlagstoneRamp" count="1">
 	<ingredient name="cobblestones" count="3"/>
+</recipe>
+
+<recipe name="calipers" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
+	<ingredient name="forgedSteel" count="30"/>
+	<ingredient name="unit_clay" count="30"/>
 </recipe>
 
 <recipe name="camoNetBlock" count="1">

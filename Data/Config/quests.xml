@@ -95,10 +95,11 @@
 
 	<!-- Basic Survival 7 - Craft a Bedroll /> -->	
 	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_map_bed" category_key="Quest">
-		<objective type="FetchKeep" id="yuccaFibers" value="20" />
+		<objective type="FetchKeep" id="cottonPlant" value="10" />
+		<objective type="FetchKeep" id="cloth" value="5" />
 		<objective type="Craft" id="bedroll" value="1" />
 		<objective type="BlockPlace" id="bedroll" value="1" />
-		
+
 		<reward type="Quest" id="quest_BasicSurvival8" />
     </quest>
 
