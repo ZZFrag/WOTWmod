@@ -27,14 +27,14 @@
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
 		<block name="cntPurse01" prob="0.03"/>
-	<block name="lootCrateGeneral" prob="0.02"/>
-	<block name="lootCrateWeaponsDay3" prob="0.015"/>
-	<block name="lootCrateWeaponsDay7" prob="0.005"/>
-	<block name="lootCrateWeaponsDay5" prob="0.0075"/>
-	<block name="lootCrateFoodandDrink" prob="0.0175"/>
-	<block name="lootCrateAmmo" prob="0.0125"/>
-	<block name="lootCrateHealthandArmor" prob="0.0125"/>
-	<block name="lootCrateBuildingSupplies" prob="0.0225"/>
+	<block name="lootCrateGeneral" prob="0.002"/>
+	<block name="lootCrateWeaponsDay3" prob="0.0015"/>
+	<block name="lootCrateWeaponsDay7" prob="0.0005"/>
+	<block name="lootCrateWeaponsDay5" prob="0.00075"/>
+	<block name="lootCrateFoodandDrink" prob="0.00175"/>
+	<block name="lootCrateAmmo" prob="0.00125"/>
+	<block name="lootCrateHealthandArmor" prob="0.00125"/>
+	<block name="lootCrateBuildingSupplies" prob="0.00225"/>
 	</placeholder>
 
 	<!-- Replace the Wasteland with one of the following -->
@@ -56,14 +56,14 @@
 		<block name="cntSportsBag02" prob="0.03"/>
 		<block name="cntPurse01" prob="0.03"/>
 		<block name="cntDeskSafe" prob="0.03"/>
-	<block name="lootCrateGeneral" prob="0.025"/>
-	<block name="lootCrateWeaponsDay3" prob="0.02"/>
-	<block name="lootCrateWeaponsDay7" prob="0.01"/>
-	<block name="lootCrateWeaponsDay5" prob="0.0125"/>
-	<block name="lootCrateFoodandDrink" prob="0.02"/>
-	<block name="lootCrateAmmo" prob="0.015"/>
-	<block name="lootCrateHealthandArmor" prob="0.015"/>
-	<block name="lootCrateBuildingSupplies" prob="0.025"/>
+	<block name="lootCrateGeneral" prob="0.0025"/>
+	<block name="lootCrateWeaponsDay3" prob="0.002"/>
+	<block name="lootCrateWeaponsDay7" prob="0.001"/>
+	<block name="lootCrateWeaponsDay5" prob="0.00125"/>
+	<block name="lootCrateFoodandDrink" prob="0.002"/>
+	<block name="lootCrateAmmo" prob="0.0015"/>
+	<block name="lootCrateHealthandArmor" prob="0.0015"/>
+	<block name="lootCrateBuildingSupplies" prob="0.0025"/>
 	</placeholder>
 
 	<!-- Replace the lootDesert with one of the following -->
@@ -84,14 +84,14 @@
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
 		<block name="cntPurse01" prob="0.03"/>
-	<block name="lootCrateGeneral" prob="0.0225"/>
-	<block name="lootCrateWeaponsDay3" prob="0.0155"/>
-	<block name="lootCrateWeaponsDay7" prob="0.0075"/>
-	<block name="lootCrateWeaponsDay5" prob="0.01"/>
-	<block name="lootCrateFoodandDrink" prob="0.02"/>
-	<block name="lootCrateAmmo" prob="0.015"/>
-	<block name="lootCrateHealthandArmor" prob="0.015"/>
-	<block name="lootCrateBuildingSupplies" prob="0.02"/>
+	<block name="lootCrateGeneral" prob="0.00225"/>
+	<block name="lootCrateWeaponsDay3" prob="0.00155"/>
+	<block name="lootCrateWeaponsDay7" prob="0.00075"/>
+	<block name="lootCrateWeaponsDay5" prob="0.001"/>
+	<block name="lootCrateFoodandDrink" prob="0.002"/>
+	<block name="lootCrateAmmo" prob="0.0015"/>
+	<block name="lootCrateHealthandArmor" prob="0.0015"/>
+	<block name="lootCrateBuildingSupplies" prob="0.002"/>
 	</placeholder>
 
 	<!-- Replace the lootBurntForest with one of the following -->
@@ -105,14 +105,14 @@
 		<block name="cntTrashPile07" prob="0.1"/>
 		<block name="cntTrashPile08" prob="0.1"/>
 		<block name="cntTrashPile09" prob="0.1"/>
-	<block name="lootCrateGeneral" prob="0.02"/>
-	<block name="lootCrateWeaponsDay3" prob="0.015"/>
-	<block name="lootCrateWeaponsDay7" prob="0.005"/>
-	<block name="lootCrateWeaponsDay5" prob="0.0075"/>
-	<block name="lootCrateFoodandDrink" prob="0.0175"/>
-	<block name="lootCrateAmmo" prob="0.0125"/>
-	<block name="lootCrateHealthandArmor" prob="0.0125"/>
-	<block name="lootCrateBuildingSupplies" prob="0.0225"/>
+	<block name="lootCrateGeneral" prob="0.002"/>
+	<block name="lootCrateWeaponsDay3" prob="0.0015"/>
+	<block name="lootCrateWeaponsDay7" prob="0.0005"/>
+	<block name="lootCrateWeaponsDay5" prob="0.00075"/>
+	<block name="lootCrateFoodandDrink" prob="0.00175"/>
+	<block name="lootCrateAmmo" prob="0.00125"/>
+	<block name="lootCrateHealthandArmor" prob="0.00125"/>
+	<block name="lootCrateBuildingSupplies" prob="0.00225"/>
 	</placeholder>
 
 	<!-- Replace the lootPlains with one of the following -->
@@ -133,14 +133,14 @@
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
 		<block name="cntPurse01" prob="0.03"/>
-	<block name="lootCrateGeneral" prob="0.02"/>
-	<block name="lootCrateWeaponsDay3" prob="0.015"/>
-	<block name="lootCrateWeaponsDay7" prob="0.005"/>
-	<block name="lootCrateWeaponsDay5" prob="0.0075"/>
-	<block name="lootCrateFoodandDrink" prob="0.0175"/>
-	<block name="lootCrateAmmo" prob="0.0125"/>
-	<block name="lootCrateHealthandArmor" prob="0.0125"/>
-	<block name="lootCrateBuildingSupplies" prob="0.0225"/>
+	<block name="lootCrateGeneral" prob="0.002"/>
+	<block name="lootCrateWeaponsDay3" prob="0.0015"/>
+	<block name="lootCrateWeaponsDay7" prob="0.0005"/>
+	<block name="lootCrateWeaponsDay5" prob="0.00075"/>
+	<block name="lootCrateFoodandDrink" prob="0.00175"/>
+	<block name="lootCrateAmmo" prob="0.00125"/>
+	<block name="lootCrateHealthandArmor" prob="0.00125"/>
+	<block name="lootCrateBuildingSupplies" prob="0.00225"/>
 	</placeholder>
 
 	<!-- Replace the lootHouse with one of the following -->
@@ -208,14 +208,14 @@
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
 		<block name="cntPurse01" prob="0.03"/>
-	<block name="lootCrateGeneral" prob="0.02"/>
-	<block name="lootCrateWeaponsDay3" prob="0.015"/>
-	<block name="lootCrateWeaponsDay7" prob="0.005"/>
-	<block name="lootCrateWeaponsDay5" prob="0.0075"/>
-	<block name="lootCrateFoodandDrink" prob="0.0175"/>
-	<block name="lootCrateAmmo" prob="0.0125"/>
-	<block name="lootCrateHealthandArmor" prob="0.0125"/>
-	<block name="lootCrateBuildingSupplies" prob="0.0225"/>
+	<block name="lootCrateGeneral" prob="0.002"/>
+	<block name="lootCrateWeaponsDay3" prob="0.0015"/>
+	<block name="lootCrateWeaponsDay7" prob="0.0005"/>
+	<block name="lootCrateWeaponsDay5" prob="0.00075"/>
+	<block name="lootCrateFoodandDrink" prob="0.00175"/>
+	<block name="lootCrateAmmo" prob="0.00125"/>
+	<block name="lootCrateHealthandArmor" prob="0.00125"/>
+	<block name="lootCrateBuildingSupplies" prob="0.00225"/>
 	</placeholder>
 
 	<!-- Replace the lootYard with one of the following -->
@@ -243,14 +243,14 @@
 		<block name="cntSportsBag01" prob="0.03"/>
 		<block name="cntSportsBag02" prob="0.03"/>
 		<block name="cntPurse01" prob="0.03"/>
-	<block name="lootCrateGeneral" prob="0.02"/>
-	<block name="lootCrateWeaponsDay3" prob="0.015"/>
-	<block name="lootCrateWeaponsDay7" prob="0.005"/>
-	<block name="lootCrateWeaponsDay5" prob="0.0075"/>
-	<block name="lootCrateFoodandDrink" prob="0.0175"/>
-	<block name="lootCrateAmmo" prob="0.0125"/>
-	<block name="lootCrateHealthandArmor" prob="0.0125"/>
-	<block name="lootCrateBuildingSupplies" prob="0.0225"/>
+	<block name="lootCrateGeneral" prob="0.002"/>
+	<block name="lootCrateWeaponsDay3" prob="0.0015"/>
+	<block name="lootCrateWeaponsDay7" prob="0.0005"/>
+	<block name="lootCrateWeaponsDay5" prob="0.00075"/>
+	<block name="lootCrateFoodandDrink" prob="0.00175"/>
+	<block name="lootCrateAmmo" prob="0.00125"/>
+	<block name="lootCrateHealthandArmor" prob="0.00125"/>
+	<block name="lootCrateBuildingSupplies" prob="0.00225"/>
 	</placeholder>
 
 	<!-- Replaces the lootMP with one of the following -->
