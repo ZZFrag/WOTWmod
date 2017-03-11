@@ -1819,57 +1819,112 @@
 
 	<terrain_generators>
 		<terrain_generator name="vanilla" use_old_final="false">
-			<module name="fastContinents" type="FastNoise">
-				<property name="frequency" value="0.5"/>
+			
+			<module name="landBaseFinal" type="FastBillow" no_seed="true">
+				<property name="frequency" value="0.009"/>
+				<property name="power" value="25"/>
 			</module>
-			<module name="fastLowlands" type="FastBillow" no_seed="true">
-				<property name="frequency" value="0.1"/>
+			<module name="landBaseScale" type="ScaleOutput">
+				<property name="sourceModule" value="landBaseFinal"/>
+				<property name="scale" value="0.1"/>
+				<property name="bias" value="-0.9"/>
 			</module>
-			<module name="fastLowlandsScaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="fastLowlands"/>
-				<property name="scale" value="0.2"/>
-				<property name="bias" value="0.5"/>
+			<module name="landBase" type="FastTurbulence">
+				<property name="sourceModule" value="landBaseScale"/>
+				<property name="frequency" value="1.5"/>
+				<property name="power" value="28"/>
+				<property name="roughness" value="8"/>
 			</module>
-			<module name="fastMountainsBase" type="FastRidgedMultifractal">
+			
+			<module name="MntBaseSm" type="FastRidgedMultifractal">
 				<property name="frequency" value="0.005"/>
 			</module>
-			<module name="fastMountainsScaled" type="ScaleBiasOutput">
-				<property name="sourceModule" value="fastMountainsBase"/>
-				<property name="scale" value="1.1"/>
-				<property name="bias" value="0.5"/>
+			<module name="MntScaledSm" type="ScaleBiasOutput">
+				<property name="sourceModule" value="MntBaseSm"/>
+				<property name="scale" value="1.2"/>
+				<property name="bias" value="-0.5"/>
 			</module>
-			<module name="fastMountains" type="FastTurbulence">
-				<property name="sourceModule" value="fastMountainsScaled"/>
-				<property name="power" value="100"/>
-				<property name="frequency" value="0.5"/>
+			<module name="MntSm" type="FastTurbulence">
+				<property name="sourceModule" value="MntScaledSm"/>
+				<property name="power" value="128"/>
+				<property name="frequency" value="0.4"/>
 				<property name="roughness" value="5"/>
 			</module>
-			<module name="fastLandFilter" type="FastNoise" seed_additive="1">
-				<property name="frequency" value="0.5"/>
+			<module name="FastMntOutputSm" type="ClampOutput">
+				<property name="sourceModule" value="MntSm"/>
+				<property name="bounds" value="0,190"/>
 			</module>
-			<module name="fastLand" type="Select">
-				<property name="controlModule" value="fastLandFilter"/>
-				<property name="sourceModule1" value="fastLowlandsScaled"/>
-				<property name="sourceModule2" value="fastMountains"/>
-				<property name="bounds" value="0,1000"/>
-				<property name="edgeFalloff" value="16"/>
+			
+			<module name="MntBaseLg" type="FastRidgedMultifractal">
+				<property name="frequency" value="0.005"/>
 			</module>
-			<module name="fastOceanBase" type="FastBillow">
+			<module name="MntScaledLg" type="ScaleBiasOutput">
+				<property name="sourceModule" value="MntBaseLg"/>
+				<property name="scale" value="2"/>
+				<property name="bias" value="0.5"/>
+			</module>
+			<module name="MntLg" type="FastTurbulence">
+				<property name="sourceModule" value="MntScaledLg"/>
+				<property name="frequency" value="0.3"/>
+				<property name="power" value="175"/>
+				<property name="roughness" value="5"/>
+			</module>
+			<module name="FastMntOutputLg" type="ClampOutput">
+				<property name="sourceModule" value="MntLg"/>
+				<property name="bounds" value="0,255"/>
+			</module>
+			
+			<module name="WaterBase" type="FastNoise">
 				<property name="frequency" value="1"/>
 			</module>
-			<module name="fastOcean" type="ScaleOutput">
-				<property name="sourceModule" value="fastOceanBase"/>
-				<property name="scale" value="0.1"/>
+			<module name="Water" type="ScaleOutput">
+				<property name="sourceModule" value="WaterBase"/>
+				<property name="scale" value="0.13"/>
 			</module>
-			<module name="fastFinal" type="Select">
-				<property name="controlModule" value="fastContinents"/>
-				<property name="sourceModule1" value="fastOcean"/>
-				<property name="sourceModule2" value="fastLand"/>
-				<property name="bounds" value="0, 1"/>
-				<property name="edgeFalloff" value="0.5"/>
+			
+			<module name="ControlBase" type="FastBillow">
+				<property name="frequency" value="0.009"/>
+				<property name="power" value="25"/>
 			</module>
+			
+			<module name="ControlBase2" type="FastBillow" seed_additive="1">
+				<property name="frequency" value="0.009"/>
+				<property name="power" value="25"/>
+			</module>
+			
+			<module name="MntSmSelect" type="Select">
+				<property name="controlModule" value="ControlBase"/>
+				<property name="sourceModule1" value="landBase"/>
+				<property name="sourceModule2" value="FastMntOutputSm"/>
+				<property name="bounds" value="0,256"/>
+				<property name="edgeFalloff" value="128"/>
+			</module>
+			<module name="MntLgSelect" type="Select">
+				<property name="controlModule" value="ControlBase"/>
+				<property name="sourceModule1" value="landBase"/>
+				<property name="sourceModule2" value="FastMntOutputLg"/>
+				<property name="bounds" value="0,256"/>
+				<property name="edgeFalloff" value="256"/>
+			</module>
+			
+			<module name="MntSelect" type="Select">
+				<property name="controlModule" value="ControlBase"/>
+				<property name="sourceModule1" value="MntSmSelect"/>
+				<property name="sourceModule2" value="MntLgSelect"/>
+				<property name="bounds" value="0,512"/>
+				<property name="edgeFalloff" value="32"/>
+			</module>
+			
+			<module name="FinalSelect" type="Select">
+				<property name="controlModule" value="ControlBase2"/>
+				<property name="sourceModule1" value="Water"/>
+				<property name="sourceModule2" value="MntSelect"/>
+				<property name="bounds" value="0,8"/>
+				<property name="edgeFalloff" value="0.128"/>
+			</module>
+			
 			<module name="scaleBiasOutput" type="ScaleBiasOutput">
-				<property name="sourceModule" value="fastFinal"/>
+				<property name="sourceModule" value="FinalSelect"/>
 				<property name="scale" value="180"/>
 				<property name="bias" value="-1"/>
 			</module>
@@ -1882,80 +1937,71 @@
 		</terrain_generator>
 	
 	</terrain_generators>
-
 	
 	<biome_generators>
 		<biome_generator name="vanilla">
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0008"/>
+				<property name="frequency" value="0.0005"/>
 				<property name="displacement" value="0.5"/>
 			</module>
 			<module name="biasOutput" type="BiasOutput">
 				<property name="sourceModule" value="voronoi"/>
 				<property name="bias" value="0.5"/>
 			</module>
-			
 			<module name="biomeDither" type="FastTurbulence">
 				<property name="sourceModule" value="biasOutput"/>
 				<property name="frequency" value="0.25"/>
 				<property name="power" value="8"/>
 				<property name="roughness" value="5"/>
 			</module>
-			
 			<module name="biomeJiggle" type="FastTurbulence">
 				<property name="sourceModule" value="biomeDither"/>
 				<property name="frequency" value="0.0016"/>
 				<property name="power" value="400"/>
 				<property name="roughness" value="1"/>
 			</module>
-			
 			<module name="clampOutput" type="ClampOutput">
 				<property name="sourceModule" value="biomeJiggle"/>
 				<property name="bounds" value="0,1"/>
 			</module>
-			
 			<output module="clampOutput"/>
 		</biome_generator>
 	</biome_generators>
-	
 	<biome_spawn_rules>
-		<biome_spawn_rule name="pine_forest">
-			<biome_generator range="0,0.1"/>
-			<terrain_generator range="170,189"/>
+		
+		<biome_spawn_rule name="forest">
+			<biome_generator range="0,0.2"/>
+		</biome_spawn_rule>
+		<biome_spawn_rule name="plains">
+			<biome_generator range="0.2,0.4"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="desert">
-			<biome_generator range="0.1,0.3"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="burnt_forest">
-			<biome_generator range="0.3,0.4"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="forest">
 			<biome_generator range="0.4,0.6"/>
 		</biome_spawn_rule>
 		
-		<biome_spawn_rule name="snow">
-			<biome_generator range="0.6,0.7"/>
-			<terrain_generator range="190,255"/>
+		<biome_spawn_rule name="burnt_forest">
+			<biome_generator range="0.6,0.8"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="wasteland">
-			<biome_generator range="0.7,0.8"/>
-		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="plains">
 			<biome_generator range="0.8,1"/>
 		</biome_spawn_rule>
-		
+		<biome_spawn_rule name="snow">
+			<distance_from_center range="9000,10000"/>
+		</biome_spawn_rule>
 		<biome_spawn_rule name="radiated">
 			<distance_from_center range="10000,20000"/>
 		</biome_spawn_rule>
-		
-		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,-1"/>
+		<biome_spawn_rule name="snow">
+			<terrain_generator range="100,255"/>
+		</biome_spawn_rule>
+		<biome_spawn_rule name="pine_forest">
+			<terrain_generator range="45,100"/>
 		</biome_spawn_rule>
 		
+		<biome_spawn_rule name="water">
+			<terrain_generator range="-31,0"/>
+		</biome_spawn_rule>
 	</biome_spawn_rules>
 </rwgmixer>
