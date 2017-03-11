@@ -3200,7 +3200,7 @@
 </lootcontainer>
 
 <!-- Lootcontainer 19 Car Loot -->
-<lootcontainer id="19" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5" loot_quality_template="baseTemplate">
+<lootcontainer id="19" count="0,2" size="7,4" buff="carAlarm" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5" loot_quality_template="baseTemplate">
 	<item group="automotive+tools+junk"/>
 	<item name="miningHelmet" prob="0.035"/>
 </lootcontainer>

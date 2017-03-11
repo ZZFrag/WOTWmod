@@ -775,4 +775,10 @@ This requires a 50+ food bar:
  This would be nice but causes a synch error:
 <buff id="notFullBlockerBuff" buffif="food lequal 0.5" debuffif="food > 0.5" actions="debuff(fullBuff);setvar(CTRfood,0)"/>
 -->
+    <!--JZMOD Car Alarm-->
+    <buff id="carAlarm" duration="2.5" smell="exLargeSmell" onexpired="carAlarm1" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm1" duration="2.5" smell="exLargeSmell" onexpired="carAlarm2" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm2" duration="2.5" smell="exLargeSmell" onexpired="carAlarm3" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm3" duration="2.5" smell="exLargeSmell" onexpired="carAlarm4" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
+    <buff id="carAlarm4" duration="2.5" smell="exLargeSmell" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Zombies are coming" icon="ui_game_symbol_drunk"/>
 </buffs>
