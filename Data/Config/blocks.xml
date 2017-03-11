@@ -2098,8 +2098,16 @@ group desc for stuff like metal siding
 <block id="263" name="lootWasteland">
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="lootWasteland" />
-	<property name="Material" value="stone" />
-	<property name="Texture" value="277" />
+	<property name="Class" value="Loot" />
+	<property name="Material" value="cloth" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="LootContainers/trash_pile01" param1="main_mesh" />
+	<property name="Collide" value="melee,bullet,arrow,rocket" />
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="LootList" value="2" />
+	<drop event="Harvest" name="canEmpty" count="1" prob="0.1"/>
+	<drop event="Destroy" name="scrapPlastics" count="0,1"/>
 </block>
 
 <block id="264" name="lootDesert">

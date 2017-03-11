@@ -326,8 +326,8 @@
 
 	
 	<wilderness_rules>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="50,100">  <!-- minimun and maximun wildernessPOI's -->
-			<path_material value="gravel" /> 
+		<wilderness_rule name="wildernessDefault" spawn_min_max="75,125">  <!-- minimun and maximun wildernessPOI's -->
+			<path_material value="asphalt" /> 
 			<path_radius value="2" />
 			<prefab_rule name="wildernessPOIs" prob="1"/>
 		</wilderness_rule>
