@@ -1760,7 +1760,7 @@
 	<property name="AttackTimeoutNight" value="0.5" />
 	
 	<!-- AI properties -->
-	<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="1"/>
+	<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="10"/>
 	<property name="AITask-2" value="ApproachAndAttackTargetNPC" param1="EntityZombie" />
 	<property name="AITask-3" value="ApproachAndAttackTargetNPC" param1="EntityAlive" />
 	<property name="AITask-4" value="ApproachSpot" />
