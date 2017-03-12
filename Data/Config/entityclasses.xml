@@ -80,37 +80,33 @@
 	<property name="Class" value="EntityZombie" />
 	<property name="Parent" value="Enemies" />
 	<property name="PhysicsBody" value="zombieStandard" />
-	<!-- AI properties -->
-	<property name="AITask-1" value="BreakDoor" />
-	<property name="AITask-2" value="BreakBlock" />
-	<property name="AITask-3" value="Territorial" param1="10" />
-	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
-	<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" />
-	<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityNPC"/>
-	<property name="AITask-7" value="ApproachSpot" />
-	<property name="AITask-8" value="Wander" />
-
-	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
-	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-	<property name="AITarget-3" value="BlockingTargetTask" />
-	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
-	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-	<property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" />
-	<property name="AITarget-8" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<!-- AI properties -->
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="Territorial" param1="10" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" />
+		<property name="AITask-6" value="ApproachSpot" />
+		<property name="AITask-7" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+		<property name="AITarget-3" value="BlockingTargetTask" />
+		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
+		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="150" />
-	<property name="MaxViewAngle" value="270" />
+	<property name="MaxHealth" value="300" />
+	<property name="MaxViewAngle" value="180" />
 	<property name="HandItem" value="handZombie" />
 	<property name="Weight" value="70" />
 	<property name="Immunity" value="sickness;disease;bleeding;wellness" />
-
 	<property name="WanderSpeed" value="0.08" />
 	<property name="ApproachSpeed" value="0.2" />
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="0.55" />
-
 	<property name="CanClimbLadders" value="true" />
 	<property name="IsEnemyEntity" value="true" />
 	<!-- This decides on the particle effect played on hit -->
@@ -134,14 +130,14 @@
 	<property name="LootListOnDeath" value="15" />
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="DeadBodyHitPoints" value="20" /> <!-- For harvesting -->
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="HeadDismemberBaseChance" value="0"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
-	<property name="HeadDismemberThreshold" value="0.23"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment -->
-	<property name="LowerLegDismemberThreshold" value="0.175"/>
+	<property name="HeadDismemberThreshold" value="0.4"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment -->
+	<property name="LowerLegDismemberThreshold" value="0.3"/>
 	<property name="LowerLegDismemberBaseChance" value="0"/>
 	<property name="LowerLegDismemberBonusChance" value="0.9"/>
 	<property name="UpperLegDismemberThreshold" value="0.175"/>
@@ -178,17 +174,12 @@
 	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep" />
 	<property name="WalkType" value="2" />
 	<property name="ApproachSpeed" value="1.35" />
-	<property name="NightApproachSpeed" value="1.35" />	
+	<property name="NightApproachSpeed" value="1.8" />	
 	<property name="HandItem" value="handCopZombie" />
-	<property name="MaxHealth" value="750" />
-	<property name="ExperienceGain" value="5000"/>
+	<property name="MaxHealth" value="1500" />	   
+	<property name="ExperienceGain" value="2500"/>
 	<property name="LootListOnDeath" value="61" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
-	<property name="HeadDismemberThreshold" value="0.2"/>
-	<property name="LowerLegDismemberThreshold" value="0.105"/>
-	<property name="UpperLegDismemberThreshold" value="0.105"/>
-	<property name="LowerArmDismemberThreshold" value="0.063"/>
-	<property name="UpperArmDismemberThreshold" value="0.063"/>
 </entity_class>
 
 <entity_class name="zombieBoe" extends="zombie01">
@@ -202,8 +193,8 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
-	<property name="ExperienceGain" value="1500"/>
-	<property name="MaxHealth" value="200" />
+	<property name="ExperienceGain" value="750"/>
+	<property name="MaxHealth" value="400" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -230,16 +221,30 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="1" />
-	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="300" />
+	<property name="HandItem" value="handCopZombie" />
+	<property name="MaxHealth" value="600" />
 	<property name="Weight" value="70" />
 	<property name="PushFactor" value="20" />
 	<property name="CanClimbLadders" value="true" />
-	<property name="ExperienceGain" value="2250"/>
+	<property name="ExperienceGain" value="1125"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
 	<property name="LootListOnDeath" value="38" />
+	               <!-- AI properties -->
+	<property name="AITask-1" value="BreakDoor" />
+	<property name="AITask-2" value="BreakBlock" />
+	<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1" />
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
+	<property name="AITask-5" value="ApproachSpot" />
+	<property name="AITask-6" value="Wander" />
+	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityNPC" />
+	<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+	<property name="AITarget-3" value="BlockingTargetTask" />
+	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 </entity_class>
 
 <entity_class name="zombieArlene" extends="zombie01">
@@ -254,7 +259,7 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
+	<property name="MaxHealth" value="200" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
@@ -273,7 +278,7 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="80" />
+	<property name="MaxHealth" value="160" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
@@ -293,7 +298,7 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="3" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
+	<property name="MaxHealth" value="200" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
@@ -312,7 +317,7 @@
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="5" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="100" />
+	<property name="MaxHealth" value="200" />
 	<property name="CanClimbLadders" value="true" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
@@ -364,10 +369,10 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="125"/>
+	<property name="ExperienceGain" value="65"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <entity_class name="zombieArleneCrawler" extends="zombie01">
@@ -384,10 +389,10 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="125"/>
+	<property name="ExperienceGain" value="65"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <entity_class name="zombieMoeCrawler" extends="zombie01">
@@ -404,10 +409,10 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="125"/>
+	<property name="ExperienceGain" value="65"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <entity_class name="zombieJoeCrawler" extends="zombie01">
@@ -418,10 +423,10 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="125"/>
+	<property name="ExperienceGain" value="65"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <entity_class name="zombieBoeCrawler" extends="zombie01">
@@ -438,10 +443,10 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="125"/>
+	<property name="ExperienceGain" value="65"/>
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <entity_class name="snowzombie" extends="zombie01">
@@ -450,7 +455,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller" />
 	<property name="ModelType" value="Standard" />
 	<property name="WalkType" value="2" />
-	<property name="MaxHealth" value="450" />
+	<property name="MaxHealth" value="900" />
 	<property name="PhysicsBody" value="zombieStandardFemale" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
@@ -462,7 +467,7 @@
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="1750"/>
 </entity_class>
 
 <entity_class name="spiderzombie" extends="zombie01">
@@ -480,13 +485,13 @@
 	<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath" />
 	<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain" />
 	<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense" />
-	<property name="MaxHealth" value="150" />
-	<property name="WanderSpeed" value="0.08" />
-	<property name="ApproachSpeed" value="0.2" />
-	<property name="NightWanderSpeed" value="0.08" />
-	<property name="NightApproachSpeed" value="1.1" />
+	<property name="MaxHealth" value="300" />
+	<property name="WanderSpeed" value="0.1" />
+	<property name="ApproachSpeed" value="0.65" />
+	<property name="NightWanderSpeed" value="0.1" />
+	<property name="NightApproachSpeed" value="1.2" />
 	<property name="PanicSpeed" value="1.2" />
-	<property name="ExperienceGain" value="1700"/>
+	<property name="ExperienceGain" value="850"/>
 	<property name="HeadDismemberThreshold" value="0"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
 	<property name="LowerLegDismemberThreshold" value="0"/>
 	<property name="UpperLegDismemberThreshold" value="0"/>
@@ -509,8 +514,8 @@
 	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
 	<property name="HandItem" value="handBurningZombie" />
-	<property name="MaxHealth" value="80" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="MaxHealth" value="160" />
+	<property name="ExperienceGain" value="600"/>
 	<drop event="Harvest" name="charredMeat" tool_category="Butcher" count="1" prob=".08" /> <!-- Harvest events do NOT extend -->
 </entity_class>
 
@@ -545,7 +550,7 @@
 	<property name="PhysicsBody" value="zombieStandard" />
 	<property name="RootMotion" value="true" />
 	<property name="HasDeathAnim" value="true" />
-	<property name="MaxHealth" value="600" />
+	<property name="MaxHealth" value="1200" />
 	<property name="Weight" value="70" />
 	<property name="PushFactor" value="20" />
 	<property name="LootListOnDeath" value="17" />
@@ -570,7 +575,7 @@
 	<property name="Explosion.BlockDamage" value="500" />
 	<property name="Explosion.EntityDamage" value="150" />
 	<property name="Explosion.DamageBonus.earth" value="0" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 	<property name="HeadDismemberBonusChance" value="0.08"/>
 	<property name="HeadDismemberThreshold" value="0"/> <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
 	<property name="LowerLegDismemberThreshold" value="0"/>
@@ -617,14 +622,14 @@
 	<!--property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalBear" /-->
 	<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 	<property name="WalkType" value="3" />
-	<property name="MaxHealth" value="50" />
+	<property name="MaxHealth" value="100" />
 	<property name="MaxViewAngle" value="270" />
 	<property name="HandItem" value="stingHornet" />
 	<property name="Weight" value="20" />
 	<property name="PushFactor" value="10" />
 	<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 	<property name="WanderSpeed" value="0.08" />
-	<property name="ApproachSpeed" value="0.2" />
+	<property name="ApproachSpeed" value="0.3" />
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="0.55" />
@@ -645,10 +650,10 @@
 	<property name="SoundSense" value="Enemies/Hornets/hornetsense" />
 	<!-- <property name="LootListOnDeath" value="24" /> -->
 	<property name="SpawnOnGround" value="false" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="400"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="TimeStayAfterDeath" value="30" />
+	<property name="TimeStayAfterDeath" value="60" />
 	<property name="DeadBodyHitPoints" value="80" /> <!-- For harvesting -->
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="2" />
 	<drop event="Harvest" name="foodHoney" tool_category="Butcher" count="1" prob="1" />
@@ -675,11 +680,11 @@
 	<property name="WanderSpeed" value="0.5" />
 	<property name="ApproachSpeed" value="1.45" />
 	<property name="NightWanderSpeed" value="0.3" />
-	<property name="NightApproachSpeed" value="1.45" />
-	<property name="PanicSpeed" value="1.45" />
+	<property name="NightApproachSpeed" value="1.6" />
+	<property name="PanicSpeed" value="1.6" />
 	<property name="CanClimbLadders" value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 	<property name="SoundRandomTime" value="45.0" />
 	<property name="SoundAlertTime" value="25.0" />
 	<property name="SoundRandom" value="Enemies/Zombie_Dogs/zombiedogroam" />
@@ -689,7 +694,7 @@
 	<property name="SoundAttack" value="Enemies/Zombie_Dogs/zombiedogattack" />
 	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense" />
 	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 	<property name="Weight" value="70" />
 	<property name="MaxViewAngle" value="270" />
@@ -745,7 +750,7 @@
 	<property name="AITask-5" value="Wander" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="50" />
+	<property name="MaxHealth" value="100" />
 	<property name="MaxViewAngle" value="270" />
 	<property name="WanderSpeed" value="0.7" />
 	<property name="PanicSpeed" value="2.5" />
@@ -757,7 +762,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="false" />
-	<property name="ExperienceGain" value="750"/>
+	<property name="ExperienceGain" value="350"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="150" /> <!-- For harvesting -->
@@ -804,7 +809,7 @@
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="1200" />
+	<property name="MaxHealth" value="2400" />
 	<property name="MaxViewAngle" value="270" />
 	<property name="WanderSpeed" value="0.25" />
 	<property name="PanicSpeed" value="2.0" />
@@ -825,7 +830,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="1750"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
 	<property name="DeadBodyHitPoints" value="250" /> <!-- For harvesting -->
@@ -870,7 +875,7 @@
 	<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="2400" />
+	<property name="MaxHealth" value="1200" />
 	<property name="MaxViewAngle" value="270" />
 	<property name="WanderSpeed" value="0.25" />
 	<property name="PanicSpeed" value="2.0" />
@@ -891,7 +896,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="0"/>
 	<!-- For harvesting -->
@@ -916,13 +921,13 @@
 	<property name="Class" value="EntityAnimalRabbit" />
 	<property name="Parent" value="Animals" />
 	<property name="Weight" value="10" />
-	<property name="MaxHealth" value="10" />
+	<property name="MaxHealth" value="20" />
 	<property name="PhysicsBody" value="rabbit" />
 	<property name="SoundHurt" value="Animals/rabbitpain" />
 	<property name="SoundDeath" value="Animals/rabbitdeath" />
 	<property name="PanicSpeed" value="2.5" />
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="250"/>
 	<property name="SwimOffset" value="2"/>
 	<!-- For harvesting -->
 	<property name="DeadBodyHitPoints" value="80" />
@@ -937,13 +942,13 @@
 	<property name="Class" value="EntityAnimalRabbit" />
 	<property name="Parent" value="Animals" />
 	<property name="Weight" value="10" />
-	<property name="MaxHealth" value="10" />
+	<property name="MaxHealth" value="20" />
 	<property name="PhysicsBody" value="chicken" />
 	<property name="SoundHurt" value="Animals/Chicken/chickenpain" />
 	<property name="SoundDeath" value="Animals/Chicken/chickendeath" />
 	<property name="PanicSpeed" value="1.5" />
 	<property name="CorpseBlockChance" value="0"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="250"/>
 	<property name="SwimOffset" value="2"/>
 	<!-- For harvesting -->
 	<property name="DeadBodyHitPoints" value="80" />
@@ -963,8 +968,8 @@
 	<property name="SoundDeath" value="Animals/pigdeath" />
 	<property name="PanicSpeed" value="2" />
 	<property name="PhysicsBody" value="pig" />
-	<property name="MaxHealth" value="40" />
-	<property name="ExperienceGain" value="750"/>
+	<property name="MaxHealth" value="80" />
+	<property name="ExperienceGain" value="375"/>
 	<property name="SwimOffset" value="0.7"/>
 	<!-- For harvesting -->
 	<drop event="Harvest" name="PorkRaw" count="4" />
@@ -1008,7 +1013,7 @@
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
 	<property name="CanClimbLadders" value="false" />
 	<!-- General entity properties -->
-	<property name="MaxHealth" value="75" />
+	<property name="MaxHealth" value="150" />
 	<property name="MaxViewAngle" value="270" />
 	<property name="WanderSpeed" value="0.25" />
 	<property name="PanicSpeed" value="2.0" />
@@ -1029,7 +1034,7 @@
 	<property name="TimeStayAfterDeath" value="300" />
 	<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 	<property name="IsEnemyEntity" value="true" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="SwimOffset" value="0.7"/>
 	<property name="CorpseBlock" value="animalGore"/>
 	<property name="CorpseBlockChance" value="1"/>
@@ -1163,59 +1168,59 @@
 <entity_class name="zombieMaleHazmat" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieMaleHazmat"/>
 	<property name="HandItem" value="handZombieHazMat" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="750"/>
 	<property name="LootListOnDeath" value="65" />
 </entity_class>
 
 <entity_class name="zombieFemaleHazmat" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieFemaleHazmat"/>
 	<property name="HandItem" value="handZombieHazMat" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="750"/>
 	<property name="LootListOnDeath" value="65" />
 </entity_class>
 
 <entity_class name="ZombieFemaleFatUMA" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieFemaleFatUMA"/>
-	<property name="MaxHealth" value="300" />
+	<property name="MaxHealth" value="600" />
 	<property name="HandItem" value="handStrongZombie" />
 	<property name="WalkType" value="1" />
-	<property name="ExperienceGain" value="1500"/>
+	<property name="ExperienceGain" value="750"/>
 	<property name="LootListOnDeath" value="85" /> <!-- used to be 15 -->
 </entity_class>
 
 <entity_class name="ZombieSoldier" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieSoldier"/>
 	<property name="LootListOnDeath" value="73" />
-	<property name="MaxHealth" value="500" />
+	<property name="MaxHealth" value="1000" />
 	<!-- <property name="Immunity" value="sickness;disease;bleeding;wellness;ArmorUp" /> probable but does not work -->
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="1750"/>
 	<property name="WalkType" value="7" />
 </entity_class>
 
 <entity_class name="ZombieUtilityWorker" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieUtilityWorker"/>
 	<property name="HandItem" value="handZombieWorker" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="LootListOnDeath" value="74" />
 </entity_class>
 
 <entity_class name="ZombieMiner" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieMiner"/>
 	<property name="HandItem" value="handZombieWorker" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="LootListOnDeath" value="82" />
 </entity_class>
 
 <entity_class name="ZombieFootballPlayer" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieFootballPlayer"/>
-	<property name="MaxHealth" value="200" />
+	<property name="MaxHealth" value="400" />
 	<property name="HandItem" value="handZombieFootballPlayer" />
 	<property name="WanderSpeed" value="0.75" />
 	<property name="ApproachSpeed" value="1.15" />
 	<property name="NightWanderSpeed" value="0.75" />
 	<property name="NightApproachSpeed" value="1.15" />	
 	<!-- <property name="Immunity" value="sickness;disease;bleeding;wellness;ArmorUp" /> probable but does not work -->
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 	<property name="LootListOnDeath" value="78" />
 </entity_class>
 
@@ -1226,7 +1231,7 @@
 
 <entity_class name="ZombieCheerleader" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieCheerleader"/>
-	<property name="MaxHealth" value="80" />
+	<property name="MaxHealth" value="160" />
 	<property name="LootListOnDeath" value="79" />
 </entity_class>
 
@@ -1238,8 +1243,8 @@
 <entity_class name="ZombieBiker" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieBiker"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="600" />
-	<property name="ExperienceGain" value="3000"/>
+	<property name="MaxHealth" value="1200" />
+	<property name="ExperienceGain" value="1500"/>
 	<property name="LootListOnDeath" value="83" />
 	<property name="WalkType" value="7" />
 </entity_class>
@@ -1247,8 +1252,8 @@
 <entity_class name="ZombieFarmer" extends="zombieUMA" >
 	<property name="Archetype" value="ZombieFarmer"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="450" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="MaxHealth" value="900" />
+	<property name="ExperienceGain" value="1750"/>
 	<property name="LootListOnDeath" value="85" />
 	<property name="WalkType" value="7" />
 </entity_class>
@@ -1256,38 +1261,38 @@
 <entity_class name="ZombieStripper" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="ZombieStripper"/>
 	<property name="HandItem" value="handZombieStripper" />
-	<property name="MaxHealth" value="80" />
+	<property name="MaxHealth" value="160" />
 	<property name="LootListOnDeath" value="84" />
 </entity_class>
 
 <entity_class name="ZombieMechanicJoeBoss" extends="zombieUMA" >
 	<property name="Archetype" value="MechanicJoeBoss"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="600" />
+	<property name="MaxHealth" value="1200" />
 	<property name="LootListOnDeath" value="99" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieNurseAnneBoss" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="NurseAnneBoss"/>
-	<property name="MaxHealth" value="500" />
+	<property name="MaxHealth" value="1000" />
 	<property name="LootListOnDeath" value="100" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieHousewifeMarianneBoss" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="HousewifeMarianneBoss"/>
-	<property name="MaxHealth" value="500" />
+	<property name="MaxHealth" value="1000" />
 	<property name="LootListOnDeath" value="102" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieBuilderBobBoss" extends="zombieUMA" >
 	<property name="Archetype" value="BuilderBobBoss"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="750" />
+	<property name="MaxHealth" value="1500" />
 	<property name="LootListOnDeath" value="101" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieInvestigatorHenryBoss" extends="zombieUMA" >
@@ -1295,31 +1300,31 @@
 	<property name="HandItem" value="handStrongZombie" />
 	<property name="MaxHealth" value="900" />
 	<property name="LootListOnDeath" value="103" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieThugBillyBoss" extends="zombieUMA" >
 	<property name="Archetype" value="ThugBillyBoss"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="800" />
+	<property name="MaxHealth" value="1600" />
 	<property name="LootListOnDeath" value="104" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieMasterLeroyBoss" extends="zombieUMA" >
 	<property name="Archetype" value="MasterLeroyBoss"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="750" />
+	<property name="MaxHealth" value="1500" />
 	<property name="LootListOnDeath" value="105" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="ZombieAccountantZoeBoss" extends="ZombieFemaleUMA" >
 	<property name="Archetype" value="AccountantZoeBoss"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="750" />
+	<property name="MaxHealth" value="1500" />
 	<property name="LootListOnDeath" value="106" />
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="2000"/>
 </entity_class>
 
 <entity_class name="SnowZombieLarry" extends="zombieUMA" >
@@ -1333,9 +1338,9 @@
 	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath" />
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
-	<property name="MaxHealth" value="350" />
+	<property name="MaxHealth" value="700" />
 	<property name="LootListOnDeath" value="66" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="1750"/>
 </entity_class>
 
 <entity_class name="SnowZombieSarah" extends="ZombieFemaleUMA" >
@@ -1349,34 +1354,34 @@
 	<property name="SoundDeath" value="Enemies/Snow_Zombie_Female/zombiefemalesnowdeath" />
 	<property name="SoundSense" value="Enemies/Snow_Zombie_Female/zombiefemalesnowsense" />
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
-	<property name="MaxHealth" value="350" />
+	<property name="MaxHealth" value="700" />
 	<property name="LootListOnDeath" value="66" />
-	<property name="ExperienceGain" value="3500"/>
+	<property name="ExperienceGain" value="1750"/>
 </entity_class>
 
 <entity_class name="ZombieMechanic" extends="zombieUMA" >
 	<property name="Archetype" value="MechanicZombie"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="250" />
+	<property name="MaxHealth" value="500" />
 	<property name="LootListOnDeath" value="112" />
-	<property name="ExperienceGain" value="3000"/>
+	<property name="ExperienceGain" value="1500"/>
 </entity_class>
 
 <entity_class name="ZombiePrisoner" extends="zombieUMA" >
 	<property name="Archetype" value="ZombiePrisoner"/>
 	<property name="WalkType" value="6" />
 	<property name="HandItem" value="handZombie" />
-	<property name="MaxHealth" value="200" />
+	<property name="MaxHealth" value="400" />
 	<property name="LootListOnDeath" value="113" />
-	<property name="ExperienceGain" value="2500"/>
+	<property name="ExperienceGain" value="1250"/>
 </entity_class>
 
 <entity_class name="ZombiePrisonGuard" extends="zombieUMA" >
 	<property name="Archetype" value="ZombiePrisonGuard"/>
 	<property name="HandItem" value="handStrongZombie" />
-	<property name="MaxHealth" value="300" />
+	<property name="MaxHealth" value="600" />
 	<property name="LootListOnDeath" value="114" />
-	<property name="ExperienceGain" value="3000"/>
+	<property name="ExperienceGain" value="1500"/>
 </entity_class>
 
 <entity_class name="minibike">
