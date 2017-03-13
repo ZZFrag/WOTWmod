@@ -3,7 +3,6 @@
 
 Rules for each biome generation and operation.
 
-
 	WEATHER CONTROL
 
 The weather sections within each biome are restrictions
@@ -97,7 +96,7 @@ If you do not declare them, the decorations of the main biome are used.
 		<property name="ParticleEffect" value="..." /></property>
 	<property class="Rainy">
 		<property name="Spectrum" value="rainy" />
-		<property name="Temperature" value="-20" />
+		<property name="Temperature" value="-15" />
 		<property name="AmbientSound" value="..." />
 		<property name="ParticleEffect" value="..." /></property>
 </weather>
