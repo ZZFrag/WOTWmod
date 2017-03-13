@@ -1,113 +1,113 @@
 <archetypes>
 	<alt_hair name="male_base_hair">
-			<part mesh="">
-				<texture name="male_hair_overlay" color="hair"/>
-			</part>
+		<part mesh="">
+			<texture name="male_hair_overlay" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="unisex_hair_dreads">
-			<part mesh="unisex_hair_dreads_hat">
-				<texture name="unisex_hair_dreads_hat" color="hair"/>
-			</part>
+		<part mesh="unisex_hair_dreads_hat">
+			<texture name="unisex_hair_dreads_hat" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="unisex_hair_afro">
-			<part mesh="unisex_hair_afro_hat">
-				<texture name="unisex_hair_afro" color="hair"/>
-			</part>
+		<part mesh="unisex_hair_afro_hat">
+			<texture name="unisex_hair_afro" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="unisex_viking_braid">
-			<part mesh="">
-				<texture name="unisex_viking_braid" color="hair"/>
-			</part>
+		<part mesh="">
+			<texture name="unisex_viking_braid" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_shaggy_hair">
-			<part mesh="male_shaggy_hair_hat">
-				<texture name="male_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="male_shaggy_hair_hat">
+			<texture name="male_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_mohawk">
-			<part mesh="">
-				<texture name="male_hair_overlay" color="hair"/>
-			</part>
+		<part mesh="">
+			<texture name="male_hair_overlay" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_hair_short_shaggy">
-			<part mesh="male_hair_short_shaggy_hat">
-				<texture name="male_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="male_hair_short_shaggy_hat">
+			<texture name="male_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_hair_pomp">
-			<part mesh="">
-				<texture name="male_hair_overlay" color="hair"/>
-			</part>
+		<part mesh="">
+			<texture name="male_hair_overlay" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_hair_long_pomp">
-			<part mesh="male_hair_long_pomp_hat">
-				<texture name="male_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="male_hair_long_pomp_hat">
+			<texture name="male_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_hair_bun">
-			<part mesh="male_hair_bun_hat">
-				<texture name="male_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="male_hair_bun_hat">
+			<texture name="male_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="male_hair_sideshave_longtop">
-			<part mesh="">
-				<texture name="male_hair_overlay" color="hair"/>
-			</part>
+		<part mesh="">
+			<texture name="male_hair_overlay" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_hair_bun">
-			<part mesh="female_hair_bun_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_hair_bun_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_hair_buns">
-			<part mesh="female_hair_buns_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_hair_buns_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_hair_choppy">
-			<part mesh="female_hair_choppy_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_hair_choppy_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_hair_long">
-			<part mesh="female_hair_long_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_hair_long_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_hair_ponytail03">
-			<part mesh="female_hair_ponytail03_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_hair_ponytail03_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_ponytail">
-			<part mesh="female_ponytail_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_ponytail_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_shaggy_hair_ponytail">
-			<part mesh="female_shaggy_hair_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_shaggy_hair_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_shaggy_hair">
-			<part mesh="female_shaggy_hair_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_shaggy_hair_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_shaggy_hair02">
-			<part mesh="female_shaggy_hair_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_shaggy_hair_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_mohawk">
-			<part mesh="female_shaggy_hair_hat">
-				<texture name="female_shaggy_hair" color="hair"/>
-			</part>
+		<part mesh="female_shaggy_hair_hat">
+			<texture name="female_shaggy_hair" color="hair"/>
+		</part>
 	</alt_hair>
 	<alt_hair name="female_base_hair">
-			<part mesh="female_base_hair_hat">
-				<texture name="female_hair_overlay" color="hair"/>
-			</part>
+		<part mesh="female_base_hair_hat">
+			<texture name="female_hair_overlay" color="hair"/>
+		</part>
 	</alt_hair>
 	<archetype name="BaseMale" male="true" hair_color="255,255,255" eye_color="0,0,255" skin_color="255,255,255" type="Player">
 		<base_mesh_parts>
@@ -2855,8 +2855,7 @@
 				<texture name="male_armor_hazmat_boots" color="255,255,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="false" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -2951,8 +2950,7 @@
 				<texture name="female_armor_hazmat_boots" color="255,255,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="false" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -3819,8 +3817,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -3930,8 +3927,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4048,8 +4044,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4163,8 +4158,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4288,8 +4282,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4409,8 +4402,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4531,8 +4523,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4655,8 +4646,7 @@
 				<texture name="unisex_goth_boots" color="255,255,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4764,8 +4754,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -4880,8 +4869,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5003,8 +4991,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5115,8 +5102,7 @@
 				<texture name="unisex_boot02" color="255,255,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5230,8 +5216,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5314,8 +5299,7 @@
 				<texture name="bear_body" color="160,156,143,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="false" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="false">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5573,8 +5557,7 @@
 				<texture name="unisex_armor_hide_boots" color="78,78,78"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5711,8 +5694,7 @@
 				<texture name="female_armor_leather_boots" color="138,118,159"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5850,8 +5832,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -5983,8 +5964,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -6116,8 +6096,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -6244,8 +6223,7 @@
 				<texture name="unisex_face_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -6381,8 +6359,7 @@
 				<texture name="unisex_face_dirt_overlay" color="241,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -6518,8 +6495,7 @@
 				<texture name="unisex_face_dirt_overlay" color="241,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -7129,8 +7105,7 @@
 				<texture name="unisex_gear_backpack01" color="199,8,8,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -8929,8 +8904,7 @@
 				<texture name="unisex_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
@@ -9054,8 +9028,7 @@
 				<texture name="unisex_dirt_overlay" color="78,15,15,255"/>
 			</part>
 		</base_mesh_parts>
-		<preview_mesh_parts>
-		</preview_mesh_parts>
+		<preview_mesh_parts></preview_mesh_parts>
 		<expression blink="true" blink_duration="0.15" blink_min_delay="5" blink_max_delay="15" saccades="true">
 			<gene name="neckUp_Down" value="0"/>
 			<gene name="neckLeft_Right" value="0"/>
