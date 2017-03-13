@@ -3175,6 +3175,7 @@ which does not exist, yet. -->
 		<!-- armorMasterLeatherArmor -->
 		<property name="Insulation" value="1"/>
 		<property name="Encumbrance" value="0.02" />
+		<property name="Weight" value="15" />
 		<property name="Material" value="leather" />
 		<property name="RepairTools" value="leather" />
 		<property name="DegradationBreaksAfter" value="false" />
@@ -4348,8 +4349,8 @@ which does not exist, yet. -->
 	</item>
 	<item id="508" name="runningShoes">
 		<property name="Extends" value="leatherBoots"/>
-		<property name="Weight" value="15" />
 		<property name="Encumbrance" value="0.02" />
+		<property name="Weight" value="15" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="250,600" /></property>
 		<property class="UMA">
