@@ -1436,8 +1436,8 @@
 	</entity_class>
 	<entity_class name="SurvivorBill" extends="SurvivorTemplateMale">
 		<property name="Archetype" value="SurvivorBill"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="BanditMachete" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="BanditMachete" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="Banditchainsaw,BanditgasCan" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="Banditchainsaw,BanditgasCan" />
 	</entity_class>
 	<entity_class name="SurvivorSheela" extends="SurvivorTemplateFemale">
 		<property name="Archetype" value="SurvivorSheela"/>

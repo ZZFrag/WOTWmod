@@ -982,8 +982,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
-			<property name="DamageBonus.glass" value="10" />
-		</property>
+			<property name="DamageBonus.glass" value="10" /></property>
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="Vomit" />
@@ -1007,11 +1006,10 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
-			<property name="DamageBonus.glass" value="10" />
-		</property>
+			<property name="DamageBonus.glass" value="10" /></property>
 	</item>
 	<item id="81" name="vomitZombieProjectile">
-        <property name="CustomIcon" value="unused" />
+		<property name="CustomIcon" value="unused" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab" />
 		<property name="Material" value="organic" />
 		<property name="IsDeveloper" value="true" />
@@ -1028,11 +1026,9 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="15" />
 			<property name="DamageBonus.metal" value="20" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.earth" value="1" />
-		</property>
+			<property name="DamageBonus.earth" value="1" /></property>
 		<property class="Attributes">
-			<property name="ApplyBuff" value="1, 1" param1="smelly" />
-		</property>
+			<property name="ApplyBuff" value="1, 1" param1="smelly" /></property>
 	</item>
 	<item id="82" name="stingHornet">
 		<property name="IsDeveloper" value="true" />
@@ -13094,7 +13090,6 @@ which does not exist, yet. -->
 		<property name="Candrop" value="false"/>
 		<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab" />
 	</item>
-	<!-- <item id="1867" name="BanditPistol"><property name="Extends" value="gunPistol" /><property class="Action0"><property name="Class" value="Ranged" /><property name="Delay" value="0.1" /><property name="Magazine_size" value="1" /><property name="Infinite_ammo" value="true" /><property name="Magazine_items" value="Bandit9mmBullet" /><property name="Reload_time" value="0.1" /></property><property name="Candrop" value="false" /><property name="IsDeveloper" value="true" /></item><item id="1868" name="Bandit9mmBullet"><property name="Extends" value="9mmBullet" /><property name="Candrop" value="false" /><property name="IsDeveloper" value="true" /></item> -->
 	<item id="1867" name="gunBanditPistol">
 		<property name="IsDeveloper" value="true"/>
 		<property name="Candrop" value="false"/>
@@ -13318,6 +13313,7 @@ which does not exist, yet. -->
 	<item id="1880" name="HDWrench">
 		<property name="CustomIcon" value="HDWrench" />\
 	
+		
 		<property name="Extends" value="wrench" />
 		<property name="EconomicValue" value="560" />
 		<property class="Action0">
@@ -14079,5 +14075,76 @@ which does not exist, yet. -->
 			<property name="DamageBlock" value="10" />
 			<property name="Buff" value="bleeding,stunned" />
 			<property name="Buff_chance" value="0.1,0.15" /></property>
+	</item>
+	<item id="1915" name="Banditchainsaw">
+		<property name="IsDeveloper" value="true" />
+		<property name="Candrop" value="false"/>
+		<property name="Meshfile" value="Items/Weapons/Melee/Chainsaw/chainsaw" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="19" />
+		<property name="SoundIdle" value="Weapons/Motorized/Chainsaw/chainsaw_idle" />
+		<property class="Parts">
+			<property name="Stock" value="partsChainsaw_parts" />
+			<property name="Receiver" value="smallEngine" />
+			<property name="Pump" value="partsHandlebars" />
+			<!-- DegradationRate -->
+			<property name="Barrel" value="partsChainsaw_blade" /></property>
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Class" value="Ranged" />
+			<property name="Auto_fire" value="true" />
+			<property name="Hitmask_override" value="Melee" />
+			<!-- "Class" value="Ranged" is hardcoded to never collide with grass regardless -->
+			<property name="Delay" value="0.2" />
+			<property name="Crosshair_min_distance" value="5" />
+			<property name="Crosshair_max_distance" value="30" />
+			<property name="Magazine_size" value="200" />
+			<property name="Single_magazine_usage" value="false" />
+			<property name="Magazine_items" value="BanditgasCan" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Bullet_material" value="metal" />
+			<property name="Reload_time" value="4.1" />
+			<property name="Sound_start" value="Weapons/Motorized/Chainsaw/chainsaw_fire_start" />
+			<property name="Sound_repeat" value="Weapons/Motorized/Chainsaw/chainsaw_fire_lp" />
+			<property name="Sound_end" value="Weapons/Motorized/Chainsaw/chainsaw_fire_end" />
+			<property name="Sound_empty" value="Weapons/Motorized/Chainsaw/chainsaw_empty" />
+			<property name="Sound_reload" value="Weapons/Motorized/Chainsaw/chainsaw_reload" />
+			<property name="Horde_meter_rate" value=".275" />
+			<property name="Horde_meter_distance" value="20" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
+			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.head" value="5" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="SupportHarvesting" value="true" />
+			<property name="UseMeleeCrosshair" value="true" />
+			<property name="ActionExp" value="1" />
+			<!-- xxx trains blade weapons SUPER fast but ActionExp cannot be set lower than 1 -->
+		</property>
+		<property name="Group" value="Tools/Traps" />
+		<property name="ActionSkillGroup" value="Mining Tools"/>
+		<property name="CraftingSkillGroup" value="Gun Smithing"/>
+		<!-- 15.0 workaround. Should be Science -->
+		<property name="RepairExpMultiplier" value="10.8"/>
+		<property name="PickupJournalEntry" value="gunAssemblyTip" />
+	</item>
+	<item id="1916" name="BanditgasCan">
+		<property name="IsDeveloper" value="true" />
+		<property name="Candrop" value="false"/>
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Material" value="metal" />
+		<property name="Stacknumber" value="10000" />
+		<!-- STK resource -->
+		<property name="FuelValue" value="2" />
+		<property name="RepairTime" value="0.6" />
+		<property name="RepairAmount" value="100" />
+		<property name="EconomicValue" value="83" />
+		<!-- oil barrel 500 -->
+		<property name="EconomicBundleSize" value="100" />
+		<property name="CraftingSkillGroup" value="Science"/>
+		<property name="Group" value="Resources,Chemicals" />
 	</item>
 </items>

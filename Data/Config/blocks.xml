@@ -9791,7 +9791,6 @@ kind of free
 	<property name="Tag" value="Gore" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="FallDamage" value="false" />
-		<!-- <property name="UpgradeRated.BlockCombined" value="air" /> -->
 		<property name="UpgradeRated.ToBlock" value="GoreBlock1BonesPrefab" />
 		<property name="UpgradeRated.Rate" value="22" />
 	<property name="DowngradeBlock" value="GoreBlock1BonesPrefab" />
@@ -9815,7 +9814,6 @@ kind of free
 	<property name="Tag" value="Gore" />
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="FallDamage" value="false" />
-		<!-- <property name="UpgradeRated.BlockCombined" value="air" /> -->
 		<property name="UpgradeRated.ToBlock" value="GoreBlock1BonesPrefab" />
 		<property name="UpgradeRated.Rate" value="22" />
 	<property name="DowngradeBlock" value="GoreBlock1BonesPrefab" />
@@ -9828,7 +9826,7 @@ kind of free
 <block id="1186" name="MeleeSurvivorCorpse">
 	<property name="CustomIcon" value="GoreBlock1Prefab" />
 	<property name="Class" value="Loot" />
-	<property name="LootList" value="71" />
+	<property name="LootList" value="15" />
 	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="organic" />
 	<property name="Shape" value="ModelEntity" />
@@ -9852,7 +9850,7 @@ kind of free
 <block id="1187" name="RangedSurvivorCorpse">
 	<property name="CustomIcon" value="GoreBlock1Prefab" />
 	<property name="Class" value="Loot" />
-	<property name="LootList" value="72" />
+	<property name="LootList" value="15" />
 	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="organic" />
 	<property name="Shape" value="ModelEntity" />
