@@ -1268,89 +1268,7 @@ The sound still has to be assigned in sounds.xml.
 ---------------------------------------------------------------------
 
 File: BIOMES.XML
-Rules for each biome generation and operation.
 
-	WEATHER CONTROL
-
-The weather sections within each biome are restrictions
-to the "global" weather condition running across the
-entire world.	For example, if the global weather says
-the precipitation of the world is 20 and your biome
-does not have any restrictions that allow below 50 for
-precipitation, then your biome will have the lowest possible
-precipitation allowed within its restrictions defined in this
-file.
-
-Temperature is different.	It is the base temperature
-of the biome to subtract from the global temperature.
-The final temperature is effected by rain, wind, clouds,
-and angle of the sun (each of these will only subtract
-from the temperature).
-
-Format & location:
-<worldgeneration>
-	<biome name="" biomemapcolor="">
-	<weather>
-			<'Condition' min="" max="" prob=""/>
-			<'Condition' min="" max="" prob=""/>
-			<'Condition' min="" max="" prob=""/>
-	<weather/>
-	<biome/>
-<worldgeneration/>
-
-Example:
-	<weather>
-	<Fog min="0" max="0" prob="0.1"/>
-	<Fog min="20" max="30" prob="0.95"/>
-	<weather/>
-"This would mean there's a total probability of 1.05,
-by adding all the 'prob' values of the 'Fog' conditions.
-There's a 9.5% chance there will be a 0 fog condition and
-a 90.5% chance the fog condition will be between 20 and 30.
-This is because 0.1, from the first line, is 9.5% of 1.05,
-the total probability of the fog conditions; and 0.95, from
-the second line, is 90.5% of the total fog condition
-probability of 1.05."
-
-Note: It may be easier to visuallize your control if you make
-sure all your probability values for each condition add up to 1.
-
-Options:
-	Temperature
-	Fog
-	CloudThickness
-	Precipitation
-	Wind
-
-Description of Options:
-	Temperature
-		Values are in fahrenheit and subtract the temperature in
-		this biome from the global temperature.
-	Fog
-		Values are between 0 and 100.	The result is used to determine
-		whether or not to use the "Foggy" Environment spectrums for
-		lighting and fog intensities.	If there is a Spectrum Condition
-		defined in the WeatherManager prefab that checks for a "Fog"
-		condition, the result of this Weather Control will be checked
-		against for the biome.
-	CloudThickness
-		Values are between 0 and 100.	0 restricts any clouds from
-		showing up in the sky.	100 allows for the thickest clouds in
-		the sky.
-	Precipitation
-		Values are between 0 and 100.	Values restrict a biome to allow
-		the min and max intensity of rain in the biome.	BUT!!!	The
-		result is dependant on CloudThickness as well.	Clouds must
-		be above 70 thickness in order for rain to be possible in the biome.
-	Wind
-		Values are between 0 and 100.	0 restricts the biome to no
-		possible wind, and 100 allows the windiest conditions in the biome.
-
-
-Subbiomes:
-<decorations> are now optional, as you can see in the "ore sub biomes".
-If you do not declare them, the decorations of the main biome are used.
--->
 
 Ore distribution:
 
@@ -1367,23 +1285,6 @@ If you make layers varied, small and plentiful you will get more seam lines wher
 Another possibility is to generate subbiomes that look the same on the surface but have a different layer setup.
 This may or may not become a feature.
 
-	<!--
-	Decoration Parameters:
-		boundingboxdelta (int): defines the number of blocks which are added to the size of prefab for a boundingbox in order to find a valid location
-			negative means overlap with other objects possible; positive means more free space around
-		boundingboxdelta="1" surfaceoffset="0"
-			+numbers do not work
-		surfaceoffset (int): defines the number of blocks which is added to the groundlevel of the prefab
-			negative means the object will be placed in the ground; positive means the object will hover in the air
-		prob (float): [0;1] (0.2 e.g. means 20%)
-		cluster (int): probability to have similar neigbourblocks. 0: almost solid ore vein; 1: default; 2: sparse distribution
-	Resource Parameters:
-		rwgGenerationType (string): defines the type of allowed resouce generation
-			Possible values are 'noise', 'caves', 'all'
-			noise - Uses regular perlin noise calculations for resources like in Navezgane
-			caves - Uses cave resource nodes instead of noise
-			all - Will use both noise based generation AND cave node generation.
-	-->
 
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------
