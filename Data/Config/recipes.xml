@@ -394,7 +394,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- * * * * * * * * * * * * Gun/Weapon Recipes * * * * * * * * * * * * -->
 
-<recipe name="woodenBow" count="1" craft_exp_gain="25">
+<recipe name="woodenBow" count="1" craft_exp_gain="5" craft_time="30">
 	<ingredient name="wood" count="12"/>
 	<ingredient name="yuccaFibers" count="3"/>
 </recipe>
@@ -731,25 +731,25 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- * * * * * * * * * * * * Tools Recipes * * * * * * * * * * * * -->
 
-<recipe name="stoneAxe" count="1" craft_exp_gain="25">
+<recipe name="stoneAxe" count="1" craft_exp_gain="5" craft_time="30">
 	<ingredient name="rockSmall" count="5"/>
 	<ingredient name="yuccaFibers" count="2"/>
 	<ingredient name="wood" count="2"/>
 </recipe>
 
-<recipe name="stoneShovel" count="1" craft_exp_gain="25">
+<recipe name="stoneShovel" count="1" craft_exp_gain="5" craft_time="30">
 	<ingredient name="rockSmall" count="6"/>
 	<ingredient name="yuccaFibers" count="3"/>
 	<ingredient name="wood" count="3"/>
 </recipe>
 
-<recipe name="ScrapIronAxe" count="1" craft_exp_gain="25">
+<recipe name="ScrapIronAxe" count="1" craft_exp_gain="10" craft_time="60">
 	<ingredient name="scrapIron" count="40"/>
 	<ingredient name="yuccaFibers" count="5"/>
 	<ingredient name="wood" count="5"/>
 </recipe>
 
-<recipe name="ScrapIronShovel" count="1" craft_exp_gain="25">
+<recipe name="ScrapIronShovel" count="1" craft_exp_gain="10" craft_time="60">
 	<ingredient name="scrapIron" count="35"/>
 	<ingredient name="yuccaFibers" count="6"/>
 	<ingredient name="wood" count="6"/>
