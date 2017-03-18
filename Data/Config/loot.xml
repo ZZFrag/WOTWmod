@@ -3321,7 +3321,7 @@
 		<item group="flares" prob="0.1" />
 	</lootcontainer>
 	<!-- Lootcontainer 62 Minibike Storage Loot -->
-	<lootcontainer id="62" count="0,1" size="4,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+	<lootcontainer id="62" count="0,1" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="0" prob="0.01"/>
 	</lootcontainer>
 	<!-- Lootcontainer 63 Mountain Man Loot -->
