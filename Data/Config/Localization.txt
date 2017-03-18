@@ -4787,8 +4787,8 @@ LegBoosterShot,items,Item,KgNone,Leg Booster Shot,,,,
 LegBoosterShotDesc,items,Item,KgNone,A shot of this will completely cure your Broken or Sprained Leg,Un coup de ceci guérira complètement votre jambe cassée ou étirée,Ein Schuss davon wird Ihr gebrochenes oder verstaubtes Bein vollständig heilen,,Una inyección de esto curará completamente su pierna rota o torcida
 FishingPole,items,Item,KgNone,Fishing Pole,,,,
 FishingPoleDesc,items,Item,KgNone,Bate this with worms that you can dig up from the ground,Batez ceci avec des vers que vous pouvez déterrer de la terre,Bate dies mit Würmer die Sie aus dem Boden graben können,,Bate esto con gusanos que se puede excavar desde el suelo
-FishingPoleBated,items,Item,KgNone,Bated Fishing Pole,,,,
-FishingPoleBatedDesc,items,Item,KgNone,Go fishing on any player placed water source,Allez pêcher sur n'importe quel joueur placé source d'eau,Angeln auf jedem Spieler platziert Wasserquelle,,Ir a pescar en cualquier fuente de agua colocada jugador
+FishingPoleBaited,items,Item,KgNone,Baited Fishing Pole,,,,
+FishingPoleBaitedDesc,items,Item,KgNone,Go fishing on any player placed water source,Allez pêcher sur n'importe quel joueur placé source d'eau,Angeln auf jedem Spieler platziert Wasserquelle,,Ir a pescar en cualquier fuente de agua colocada jugador
 WormsDesc,items,Item,KgNone,Use these to bait your fishing pole,Utilisez-les pour appâter votre canne à pêche,Verwenden Sie diese um Ihre Angelrute zu ködern,,Úsalos para cebar tu caña de pescar
 FishDesc,items,Item,KgNone,Cook this to make Grilled Fish or make a Tuna Sandwich,Faites cuire ceci pour faire le poisson grillé ou faire un sandwich de thon,Kochen Sie dieses um gegrillten Fisch zu bilden oder ein Thunfisch-Sandwich zu machen,,Cocinar esto para hacer pescado a la parrilla o hacer un sandwich de atún
 FishGrilled,items,Item,KgNone,Grilled Fish,,,,
@@ -4945,9 +4945,9 @@ WoodWorkingWorkbenchDesc,blocks,Block,KgNone,Workstation for crafting Wood Based
 FireTrap,blocks,Block,KgNone,Fire Trap,,,,
 FireTrapDesc,blocks,Block,KgNone,A Trap that will burn your enemies,Un piège qui brûlera vos ennemis,Eine Falle die deine Feinde verbrennen wird,,Una trampa que quemará a tus enemigos
 RabbitTrap(Unbaited),blocks,Block,KgNone,Rabbit Trap (Unbaited),,,,
-RabbitTrap(Unbaited)Desc,blocks,Block,KgNone,This trap has to be bated with corn through recipes or upgrading block after placement,Ce piège doit être bated avec le maïs par des recettes ou le bloc de mise à niveau après le placement,Diese Falle muss mit Getreide durch Rezepte oder Modernisierung Block nach der Platzierung gebunden werden,,Esta trampa tiene que ser bated con el maíz a través de las recetas o de la mejora del bloque después de la colocación
-RabbitTrap(Bated),blocks,Block,KgNone,Rabbit Trap (Bated),,,,
-RabbitTrap(Bated)Desc,blocks,Block,KgNone,A Trap that will Catch you some Rabbit Meat,Un piège qui va vous attraper de la viande de lapin,Eine Falle die Ihnen etwas Kaninchenfleisch fangen wird,,Una trampa que te atrapará un poco de carne de conejo
+RabbitTrap(Unbaited)Desc,blocks,Block,KgNone,This trap has to be baited with corn through recipes or upgrading block after placement,Ce piège doit être baited avec le maïs par des recettes ou le bloc de mise à niveau après le placement,Diese Falle muss mit Getreide durch Rezepte oder Modernisierung Block nach der Platzierung gebunden werden,,Esta trampa tiene que ser baited con el maíz a través de las recetas o de la mejora del bloque después de la colocación
+RabbitTrap(Baited),blocks,Block,KgNone,Rabbit Trap (Baited),,,,
+RabbitTrap(Baited)Desc,blocks,Block,KgNone,A Trap that will Catch you some Rabbit Meat,Un piège qui va vous attraper de la viande de lapin,Eine Falle die Ihnen etwas Kaninchenfleisch fangen wird,,Una trampa que te atrapará un poco de carne de conejo
 SpeedTrap,blocks,Block,KgNone,Speed Trap,,,,
 SpeedTrapDesc,blocks,Block,KgNone,A Trap that will Slow your Enemies,Un piège qui ralentira vos ennemis,Eine Falle die deine Feinde verlangsamt,,Una trampa que retardará a tus enemigos
 ExplosiveSpeedTrap,blocks,Block,KgNone,Explosive Speed Trap,,,,

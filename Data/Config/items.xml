@@ -12119,8 +12119,8 @@ which does not exist, yet. -->
 		<property name="CraftingSkillGroup" value="Tool Smithing" />
 		<property name="EconomicValue" value="250" />
 	</item>
-	<item id="1805" name="FishingPoleBated">
-		<property name="CustomIcon" value="FishingPoleBated" />
+	<item id="1805" name="FishingPoleBaited">
+		<property name="CustomIcon" value="FishingPoleBaited" />
 		<property name="Meshfile" value="Items/Weapons/Melee/Stick/stick" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="Material" value="wood" />
@@ -12241,7 +12241,7 @@ which does not exist, yet. -->
 		<property name="CustomIcon" value="FishingBook" />
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="FishingPole, FishingPoleBated" />
+			<property name="Recipes_to_learn" value="FishingPole, FishingPoleBaited" />
 			<property name="Skills_to_gain" value="Tool Smithing" /></property>
 	</item>
 	<item id="1811" name="FishStewRecipe">

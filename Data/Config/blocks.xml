@@ -15425,7 +15425,7 @@ kind of free
     <property name="Model" value="LootContainers/shopping_basket_empty" param1="main_mesh" />
     <property name="CanPickup" value="true" />
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="RabbitTrap(Bated)" />
+		<property name="ToBlock" value="RabbitTrap(Baited)" />
 		<property name="Item" value="corn" />
 		<property name="ItemCount" value="2" />
 		<property name="UpgradeHitCount" value="4" />
@@ -15435,7 +15435,7 @@ kind of free
 	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
-<block id="2005" name="RabbitTrap(Bated)">
+<block id="2005" name="RabbitTrap(Baited)">
 	<property name="Extends" value="cropsGrowingMaster" />
 	<property name="CustomIcon" value="RabbitTrap" />
     <property name="Material" value="wood" />

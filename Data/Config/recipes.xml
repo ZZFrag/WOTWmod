@@ -748,7 +748,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="yuccaFibers" count="2"/>
 		<ingredient name="fishingWeight" count="1"/>
 	</recipe>
-	<recipe name="FishingPoleBated" count="1" craft_exp_gain="50">
+	<recipe name="FishingPoleBaited" count="1" craft_exp_gain="50">
 		<ingredient name="Worms" count="1"/>
 		<ingredient name="FishingPole" count="1"/>
 	</recipe>
@@ -822,7 +822,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cookingGrill" count="1"/>
 		<ingredient name="gasCan" count="10"/>
 	</recipe>
-	<recipe name="RabbitTrap(Bated)" count="1">
+	<recipe name="RabbitTrap(Baited)" count="1">
 		<ingredient name="RabbitTrap(Unbaited)" count="1"/>
 		<ingredient name="corn" count="2"/>
 	</recipe>
