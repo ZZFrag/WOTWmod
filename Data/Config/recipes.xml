@@ -1016,20 +1016,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="TunaSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
 		<ingredient name="canTuna" count="1" />
-		<ingredient name="Bread" count="2" />
+		<ingredient name="Bread" count="1" />
 	</recipe>
 	<recipe name="TunaSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
 		<ingredient name="Fish" count="1"/>
-		<ingredient name="Bread" count="2"/>
+		<ingredient name="Bread" count="1"/>
 	</recipe>
 	<recipe name="BaconMushroomSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
 		<ingredient name="PorkGrilled" count="1"/>
 		<ingredient name="mushrooms" count="2"/>
-		<ingredient name="Bread" count="2"/>
+		<ingredient name="Bread" count="1"/>
 	</recipe>
 	<recipe name="HamSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
 		<ingredient name="canHam" count="1"/>
-		<ingredient name="Bread" count="2"/>
+		<ingredient name="Bread" count="1"/>
 	</recipe>
 	<recipe name="Bread" count="1" craft_area="campfire" craft_tool="cookingGrill">
 		<ingredient name="Dough" count="1"/>
@@ -1048,7 +1048,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cornMeal" count="1"/>
 		<ingredient name="bottledWater" count="1"/>
 	</recipe>
-	<recipe name="cornMeal" count="1">
+	<recipe name="cornMeal" count="1" craft_area="MortarandPestle">
 		<ingredient name="corn" count="1"/>
 	</recipe>
 	<recipe name="moldyBread" count="1" craft_area="chemistryStation">
@@ -1106,7 +1106,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mushrooms" count="1"/>
 		<ingredient name="ZincPowder" count="2"/>
 	</recipe>
-	<recipe name="snowberryExtract" count="1" craft_area="chemistryStation" craft_exp_gain="50">
+	<recipe name="snowberryExtract" count="1" craft_area="MortarandPestle" craft_exp_gain="50">
 		<ingredient name="snowberryPlant" count="1"/>
 		<ingredient name="cornMeal" count="1"/>
 	</recipe>
@@ -1152,13 +1152,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="chrysanthemumPlant" count="1"/>
 		<ingredient name="potassiumNitratePowder" count="1"/>
 		<ingredient name="bottledRiverWater" count="1"/>
-	</recipe>
-	<recipe name="herbalAntibiotics" count="1" craft_area="campfire" craft_tool="cookingPot" craft_exp_gain="75">
-		<ingredient name="blueberries" count="5"/>
-		<ingredient name="mushrooms" count="3"/>
-		<ingredient name="chrysanthemumPlant" count="3"/>
-		<ingredient name="potassiumNitratePowder" count="3"/>
-		<ingredient name="bottledWater" count="1"/>
 	</recipe>
 	<recipe name="splint" count="1">
 		<ingredient name="cloth" count="2"/>
