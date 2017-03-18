@@ -2807,6 +2807,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="logCabinBlock" count="1">
 		<ingredient name="wood" count="20"/>
+	</recipe>
 	<recipe name="metalTrussingBlock" count="1" craft_area="BuildersForge" craft_tool="anvil" material_based="true">
 		<ingredient name="unit_iron" count="40"/>
 		<ingredient name="unit_clay" count="5"/>
