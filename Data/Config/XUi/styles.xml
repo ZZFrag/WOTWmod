@@ -25,8 +25,8 @@
 		<style_entry name="zompact_minibikebasketheight" value="675"/><!-- Minibike Storage Window Height  rows x75 -->
 		<style_entry name="zompact_minibikebasketthemebgvalue" value="450,50"/><!-- width,height. ONLY ADJUST WIDTH to match what you set above. This is a theme variable. If you do not adjust this, and theme the via zompact_minibikebasket, the image used will not match the width of the window -->
 		
-		<style_entry name="zompact_lootrows" value="5"/><!-- Loot item grid rows --><!-- Vanilla value: 10   is maximum size leave at 10-->
-		<style_entry name="zompact_lootcolumns" value="10"/><!-- Loot item grid columns --><!-- Vanilla value: 9 increase to (total inventory spaces)+18=   divide by 10 round up over is ok -->
+		<style_entry name="zompact_lootrows" value="9"/><!-- Loot item grid rows --><!-- Vanilla value: 10   is maximum size leave at 10-->
+		<style_entry name="zompact_lootcolumns" value="8"/><!-- Loot item grid columns --><!-- Vanilla value: 9 increase to (total inventory spaces)+18=   divide by 10 round up over is ok -->
 		<!-- must adjust in loot.xml find player dropped backpacks (5,10) must match loot window or you will lose items on death-->
 		<!-- adjusted csharp file must be installed for all bag size increases or items will be lost.-->
 		
