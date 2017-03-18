@@ -1864,10 +1864,9 @@ which does not exist, yet. -->
 			<property name="GetQualityFromWeapon" value="true" />
 			<property name="EntityDamage" value="10,25" />
 			<property name="BlockDamage" value="5.4,13.5" /></property>
-		<property name="CraftingSkillGroup" value="Gun Smithing"/>
+		<property name="CraftingSkillGroup" value="Ammo Crafting"/>
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
-	<!-- <item id="157" name="shotgunSlug"><property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" /><property name="Material" value="brass" /><property name="HoldType" value="21" /><property name="Stacknumber" value="128" /><property name="EconomicValue" value="56" /><property class="Action1"><property name="Class" value="Projectile" /><property name="Buff" value="arrowCriticalBleedout" /><property name="Buff_chance" value="0.5" /><property name="Explosion.ParticleIndex" value="0" /><property name="Velocity" value="65" /><property name="FlyTime" value="1" /><property name="LifeTime" value="17" /><property name="DamageBonus.head" value="5" /><property name="DamageBonus.glass" value="25" /><property name="DamageBonus.wood" value="1" /><property name="DamageBonus.earth" value="1" /><property name="DamageBonus.metal" value="1" /><property name="DamageBonus.cloth" value="1" /></property><property class="Attributes"><property name="GetQualityFromWeapon" value="true" /><property name="EntityDamage" value="100,150" /><property name="BlockDamage" value="100,150" /></property><property name="CraftingSkillGroup" value="Ammo Crafting"/><property name="Group" value="Ammo/Weapons" /></item> -->
 	<item id="157" name="shotgunSlug">
 		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
 		<property name="Material" value="brass" />
@@ -1879,7 +1878,7 @@ which does not exist, yet. -->
 			<property name="GetQualityFromWeapon" value="true" />
 			<property name="EntityDamage" value="100,150" />
 			<property name="BlockDamage" value="100,150" /></property>
-		<property name="CraftingSkillGroup" value="Gun Smithing"/>
+		<property name="CraftingSkillGroup" value="Ammo Crafting"/>
 		<property name="Group" value="Ammo/Weapons" />
 	</item>
 	<item id="159" name="rocket">
@@ -3611,6 +3610,12 @@ which does not exist, yet. -->
 		<!-- banditArmor -->
 		<property name="Extends" value="heavyBanditGloves" />
 		<property name="EquipSlot" value="Face" />
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.22,0.5" />
+			<property name="PunctureProtection" value="0.2,0.4" />
+			<property name="FireProtection" value="0.15,0.45" />
+			<property name="RadiationProtection" value="0.16,0.4" />
+			<property name="DegradationMax" value="320,800" /></property>
 		<property class="UMA">
 			<property name="Mesh" value="armor_heavy_bandit_gasmask" />
 			<property name="Overlay0" value="bandit_armor" />
@@ -5059,6 +5064,12 @@ which does not exist, yet. -->
 		<property name="FuelValue" value="6" />
 		<property name="EconomicValue" value="40" />
 		<property name="EquipSlot" value="Legs" />
+		<property class="Attributes">
+			<property name="ConcussiveProtection" value="0.119,0.29" />
+			<property name="PunctureProtection" value="0.11,0.22" />
+			<property name="FireProtection" value="0.11,0.25" />
+			<property name="RadiationProtection" value="0.05,0.09" />
+			<property name="DegradationMax" value="180,450" /></property>
 		<property class="UMA">
 			<property name="Mesh" value="clothes_overalls" />
 			<property name="Overlay0" value="unisex_clothes_overalls" /></property>
@@ -13314,6 +13325,7 @@ which does not exist, yet. -->
 	<item id="1880" name="HDWrench">
 		<property name="CustomIcon" value="HDWrench" />\
 	
+		
 		
 		<property name="Extends" value="wrench" />
 		<property name="EconomicValue" value="560" />
