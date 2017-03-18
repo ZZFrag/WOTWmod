@@ -3155,7 +3155,7 @@
 		<item group="flares" prob="0.05" />
 	</lootcontainer>
 	<!-- Lootcontainer 41 Player Dropped Backpacks -->
-	<lootcontainer id="41" count="0,1" size="8,9" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
+	<lootcontainer id="41" count="0,1" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
 		<item name="cobweb" count="1,2" prob="0.01"/>
 	</lootcontainer>
 	<!-- Lootcontainer 42 Gun Safe Loot -->
