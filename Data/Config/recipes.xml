@@ -1014,7 +1014,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Bread" count="1"/>
 	</recipe>
 	<recipe name="BaconMushroomSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
-		<ingredient name="PorkGrilled" count="1"/>
+		<ingredient name="PorkRaw" count="1"/>
 		<ingredient name="mushrooms" count="2"/>
 		<ingredient name="Bread" count="1"/>
 	</recipe>
