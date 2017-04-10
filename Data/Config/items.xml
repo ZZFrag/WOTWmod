@@ -201,7 +201,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="Weapons/Melee/Torch/torch_swoosh" />
 		<property name="Stamina_usage" value="8" />
 		<property name="Buff" value="burning" />
-		<property name="Buff_chance" value="0.1" />
+		<property name="Buff_chance" value="0.25" />
 		<property name="DamageBonus.head" value="2" />
 		<property name="DamageBonus.glass" value="25" />
 	</property>
@@ -4496,14 +4496,16 @@ which does not exist, yet. -->
 </item>
 
 <item id="477" name="cigar">
+	<property name="Insulation" value="3"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-	<property name="Material" value="cloth" />
+	<property name="Material" value="plants" />
 	<property name="HoldType" value="45" />
 	<property name="Stacknumber" value="1" />
 	<property name="FuelValue" value="3" />
 	<property name="EconomicValue" value="50" />
 	<property name="EquipSlot" value="Face" />
+	<property name="Weight" value="5" />
 	<property class="UMA">
 		<property name="Mesh" value="gear_cigar" />
 		<property name="Overlay0" value="gear_cigar" />
@@ -4843,6 +4845,7 @@ which does not exist, yet. -->
 <item id="508" name="runningShoes">
 	<property name="Extends" value="leatherBoots"/>
 	<property name="Encumbrance" value="0.02" />
+	<property name="Weight" value="15" />
 	<property class="Attributes">
 		<property name="DegradationMax" value="250,600" />
 	</property>
