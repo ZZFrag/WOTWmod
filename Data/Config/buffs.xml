@@ -626,15 +626,15 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="splint" overrides="brokenLeg,sprainedLeg" type="speedmodifier" overrideicon="true"
 	icon="ui_game_symbol_splint" name_key="splintedLeg" description_key="splintedLegDesc" tooltip_key="splintedLegTooltip">
 	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
-	<modify id="1" buff="brokenLeg" tickrate="2"/>
-	<modify id="2" buff="sprainedLeg" tickrate="2"/>
+	<modify id="1" buff="brokenLeg" tickrate="3"/>
+	<modify id="2" buff="sprainedLeg" tickrate="3"/>
 </buff>
 
 <buff id="AdvancedSplint" overrides="brokenLeg,sprainedLeg" overrideicon="true" type="speedmodifier"
 	icon="AdvancedSplintIcon" name_key="advancedsplint" description_key="advancedsplintDesc" tooltip_key="advancedsplintTooltip" causes="AdvancedSplint">
 	<modify id="0" stat="speedmodifier" mulValue="1.2"/>
-	<modify id="1" buff="brokenLeg" tickrate="2"/>
-	<modify id="2" buff="sprainedLeg" tickrate="2"/>
+	<modify id="1" buff="brokenLeg" tickrate="3"/>
+	<modify id="2" buff="sprainedLeg" tickrate="3"/>
 </buff>
 	
 <buff id="sprainedLeg" mutex="brokenLeg,AdvancedSplint" type="speedmodifier" duration="2400" actions="debuff(firstAid);debuff(splint)"
@@ -841,6 +841,12 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="showrestlevel21" buffif="rest gequal 100" debuffif="rest lequal 99" duration="150t" overrides="showrestlevel20" type="speedmodifier" onexpired="showrestlevel20" actions="setvar(rest, 100)"
 	icon="zzzRestIconL20" name_key="showrestlevel21" description_key="showrestlevel21Desc" tooltip_key="showrestlevel21Tooltip"/>
 
+<!--JZMOD Car Alarm-->
+<buff id="carAlarm" duration="2.5" smell="exLargeSmell" onexpired="carAlarm1" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
+<buff id="carAlarm1" duration="2.5" smell="exLargeSmell" onexpired="carAlarm2" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="You've triggered a car alarm." icon="ui_game_symbol_drunk"/>
+<buff id="carAlarm2" duration="2.5" smell="exLargeSmell" onexpired="carAlarm3" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
+<buff id="carAlarm3" duration="2.5" smell="exLargeSmell" onexpired="carAlarm4" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
+<buff id="carAlarm4" duration="2.5" smell="exLargeSmell" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Zombies are coming" icon="ui_game_symbol_drunk"/>
 
 <!-- Immune System Buffs -->
 
