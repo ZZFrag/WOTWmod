@@ -2099,8 +2099,17 @@ group desc for stuff like metal siding
 <block id="263" name="lootWasteland">
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="lootWasteland" />
-	<property name="Material" value="stone" />
+	<property name="Class" value="Loot" />
+	<property name="Material" value="cloth" />
 	<property name="Texture" value="277" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="LootContainers/trash_pile01" param1="main_mesh" />
+	<property name="Collide" value="melee,bullet,arrow,rocket" />
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="LootList" value="2" />
+	<drop event="Harvest" name="canEmpty" count="1" prob="0.1"/>
+	<drop event="Destroy" name="scrapPlastics" count="0,1"/>
 </block>
 
 <block id="264" name="lootDesert">
@@ -4394,7 +4403,7 @@ kind of free
 	<property name="FuelValue" value="120" />
 	<property name="Model" value="Furniture/desk01" param1="main_mesh" />
 	<property name="MultiBlockDim" value="2,1,1" />
-	<property name="LootList" value="6" />
+	<property name="LootList" value="44" />
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="15" /> </property>
 	<drop event="Destroy" name="wood" count="6" prob="1" />
@@ -4410,7 +4419,7 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Furniture/desk02" param1="main_mesh" />
 	<property name="MultiBlockDim" value="2,1,1" />
-	<property name="LootList" value="6" />
+	<property name="LootList" value="44" />
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="spring" value="4" /> <property name="forgedIron" value="15" /> </property>
 	<drop event="Destroy" name="scrapIron" count="25" />
@@ -4639,10 +4648,10 @@ kind of free
 	<property name="IsTerrainDecoration" value="true" />
 	<property name="LootList" value="25" />
 	<property name="Collide" value="melee,bullet,arrow,rocket" />
-	<drop event="Harvest" name="cloth" count="1" prob=".3" tool_category="Disassemble" />
-	<drop event="Harvest" name="feather" count="3" prob=".35" tool_category="Disassemble" />
-	<drop event="Harvest" name="feather" count="2" prob=".6" tool_category="Disassemble" />
-	<drop event="Destroy" name="yuccaFibers" count="2,8" />
+	<drop event="Harvest" name="cloth" count="1" prob=".3" />
+	<drop event="Harvest" name="feather" count="3" prob=".35" />
+	<drop event="Harvest" name="feather" count="2" prob=".6" />
+	<drop event="Destroy" name="wood" count="1,4" />
 </block>
 
 <block id="543" name="concreteCNRRoundTop">
@@ -4847,6 +4856,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_small_dust" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Destroy" name="feather" count="8,20" prob="0.2" />
 </block>
 
 <block id="560" name="treeMountainPine8m">
@@ -4858,6 +4868,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="1"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.3" />
 </block>
 
 <block id="561" name="treeMountainPine13m">
@@ -4870,6 +4881,7 @@ kind of free
  	<drop event="Harvest" name="wood" count="235" />
 	<drop event="Destroy" name="wood" count="115" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="1"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.4" />
 </block>
 
 <block id="562" name="treeMountainPine16m">
@@ -4882,6 +4894,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.5" />
 </block>
 
 <block id="563" name="treeMountainPine19m">
@@ -4894,6 +4907,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.6" />
 </block>
 
 <block id="564" name="treeMountainPine20m">
@@ -4906,6 +4920,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="500" />
 	<drop event="Destroy" name="wood" count="250" prob="1" />
 	<drop event="Destroy" name="pineSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.7" />
 </block>
 
 <block id="565" name="treeMountainPineDry">
@@ -4917,6 +4932,7 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0" />
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.2" />
 </block>
 
 <block id="566" name="treeBirch10m">
@@ -4928,6 +4944,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch_small" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Destroy" name="feather" count="8,20" prob="0.3" />
 </block>
 
 <block id="567" name="treeBirch12m">
@@ -4940,6 +4957,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch_small" />
 	<drop event="Harvest" name="wood" count="235" />
 	<drop event="Destroy" name="wood" count="115" prob="1" />
+	<drop event="Destroy" name="feather" count="8,20" prob="0.5" />
 </block>
 
 <block id="568" name="treeBirch15m">
@@ -4952,6 +4970,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_birch" />
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
+	<drop event="Destroy" name="feather" count="8,20" prob="0.7" />
 </block>
 
 <block id="569" name="treeDeadShrub">
@@ -4964,6 +4983,7 @@ kind of free
 	<property name="Model" value="Entities/Trees/Haunted_Shrub_Wasteland2Prefab" /> <!-- uses dummy texture id from opaque atlas -->
 	<drop event="Harvest" name="wood" count="10" />
 	<drop event="Destroy" name="wood" count="2" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.2" />
 </block>
 
 <block id="570" name="treeMaple6m">
@@ -4976,6 +4996,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="1"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.3" />
 </block>
 
 <block id="571" name="treeMaple13m">
@@ -4989,6 +5010,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="235" />
 	<drop event="Destroy" name="wood" count="115" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="1"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.4" />
 </block>
 
 <block id="572" name="rConcreteCNRRoundTop">
@@ -5009,6 +5031,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.5" />
 </block>
 
 <block id="574" name="treeMaple16m">
@@ -5022,6 +5045,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.6" />
 </block>
 
 <block id="575" name="treeMaple17m">
@@ -5035,6 +5059,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="500" />
 	<drop event="Destroy" name="wood" count="250" prob="1" />
 	<drop event="Destroy" name="mapleSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.7" />
 </block>
 
 <block id="576" name="steelCNRRound">
@@ -5094,6 +5119,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.2" />
 </block>
 
 <block id="582" name="treeDeadTree02"> <!-- almost a shrub -->
@@ -5104,6 +5130,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.2" />
 </block>
 
 <block id="583" name="brickDecayedBroke1Block">
@@ -5133,7 +5160,7 @@ kind of free
 	<property name="BigDecorationRadius" value="1" />
 	<drop event="Harvest" name="wood" count="100" />
 	<drop event="Destroy" name="wood" count="50" prob="1" />
-	<property name="FallOver" value="true" />
+	<drop event="Destroy" name="feather" count="8,20" prob="0.5" />
 </block>
 
 <block id="587" name="treeWinterPine01">
@@ -5146,6 +5173,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="235" />
 	<drop event="Destroy" name="wood" count="115" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.5" />
 </block>
 
 <block id="588" name="cntTreeStump">
@@ -5173,6 +5201,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="365" />
 	<drop event="Destroy" name="wood" count="185" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.6" />
 </block>
 
 <block id="590" name="treeWinterPine03">
@@ -5185,6 +5214,7 @@ kind of free
 	<drop event="Harvest" name="wood" count="500" />
 	<drop event="Destroy" name="wood" count="250" prob="1" />
 	<drop event="Destroy" name="blueSpruceSeed" count="2"/>
+	<drop event="Destroy" name="feather" count="8,20" prob="0.7" />
 </block>
 
 <block id="591" name="treeDesertShrub">
@@ -5440,12 +5470,14 @@ kind of free
 </block>
 
 <block id="625" name="schoolDesk">
-	<property name="Material" value="furniture" />
+	<property name="Material" value="Mmetal_weak" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Texture" value="282" />
 	<property name="Model" value="Furniture/school_desk" param1="main_mesh" />
+	<drop event="Harvest" name="scrapPlastics" count="2" prob=".5" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapIron" count="10" prob="0.5" />
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
@@ -5937,7 +5969,7 @@ kind of free
 	<property name="IsPlant" value="true" />
 	<property name="CanPlayersSpawnOn" value="false" />
 	<drop event="Harvest" name="yuccaFibers" count="10" />
-	<drop event="Destroy" name="foodYuccaFruit" count="3" prob="1" />
+	<drop event="Destroy" name="wood" count="30" prob="1" />
 	<drop event="Destroy" name="yuccaFibers" count="5" />
 </block>
 
@@ -5945,7 +5977,7 @@ kind of free
 	<property name="Extends" value="treeCactus01" />
 	<property name="Model" value="Entities/Trees/Saguaro_Cactus_16Prefab" />
 	<property name="MultiBlockDim" value="1,4,1" />
-	<drop event="Destroy" name="foodYuccaFruit" count="3" prob="1" />
+	<drop event="Destroy" name="wood" count="30" prob="1" />
 </block>
 
 <block id="670" name="treeCactus03">
@@ -5960,7 +5992,7 @@ kind of free
 	<property name="StabilitySupport" value="false" />
 	<property name="Model" value="Entities/Plants/cactus04Prefab" />
 	<property name="MultiBlockDim" value="1,1,1" />
-	<drop event="Destroy" name="foodYuccaFruit" count="1" prob="1" />
+	<drop event="Destroy" name="wood" count="10" prob="1" />
 </block>
 
 <block id="672" name="treeCactus05">
@@ -5968,7 +6000,7 @@ kind of free
 	<property name="Model" value="Entities/Plants/cactus05Prefab" />
 	<property name="MultiBlockDim" value="1,1,1" />
 	<property name="Damage" value="1" />
-	<drop event="Destroy" name="foodYuccaFruit" count="1" prob="1" />
+	<drop event="Destroy" name="wood" count="10" prob="1" />
 </block>
 
 <block id="673" name="treeCactus06">
@@ -5976,7 +6008,7 @@ kind of free
 	<property name="Model" value="Entities/Plants/cactus06Prefab" />
 	<property name="MultiBlockDim" value="1,1,1" />
 	<property name="Damage" value="1" />
-	<drop event="Destroy" name="foodYuccaFruit" count="2" prob="1" />
+	<drop event="Destroy" name="wood" count="20" prob="1" />
 </block>
 
 <block id="674" name="treePlantedMountainPine1m">
@@ -9002,7 +9034,7 @@ kind of free
 	<property name="Class" value="Loot" />
 	<property name="Material" value="metal" />
 	<property name="Texture" value="346,345,341,345,262,345" />
-	<property name="LootList" value="3" />
+	<property name="LootList" value="5" />
 	<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="10" prob="1" />
@@ -9712,7 +9744,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_wood" />
 	<drop event="Harvest" name="wood" count="4" prob="1" />
-	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="doorKnob" count="1" prob="0.4"/>
 	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
@@ -9847,7 +9879,7 @@ kind of free
 <block id="1186" name="MeleeSurvivorCorpse">
 	<property name="CustomIcon" value="GoreBlock1Prefab" />
 	<property name="Class" value="Loot" />
-	<property name="LootList" value="71" />
+	<property name="LootList" value="15" />
 	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="organic" />
 	<property name="Shape" value="ModelEntity" />
@@ -9871,7 +9903,7 @@ kind of free
 <block id="1187" name="RangedSurvivorCorpse">
 	<property name="CustomIcon" value="GoreBlock1Prefab" />
 	<property name="Class" value="Loot" />
-	<property name="LootList" value="72" />
+	<property name="LootList" value="15" />
 	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="organic" />
 	<property name="Shape" value="ModelEntity" />
@@ -10078,8 +10110,8 @@ kind of free
 	<property name="Mesh" value="cutout" />
 	<property name="Texture" value="416" />
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
-	<drop event="Destroy" count="0" />
 	<property name="EconomicValue" value="20" />
+	<drop event="Destroy" name="scrapPlastics" count="2,5" />
 </block>
 
 <block id="1210" name="miniblindBottomSheet">
@@ -12455,12 +12487,15 @@ kind of free
 	<property name="ShowModelOnFall" value="false" />
 	<drop event="Harvest" name="leather" count="5" prob="0.5"/>
 	<drop event="Harvest" name="cloth" count="5" />
-	<drop event="Harvest" name="scrapIron" count="30" prob="0.6" />
-	<drop event="Destroy" name="scrapIron" count="20" prob="1" />
+	<drop event="Harvest" name="scrapIron" count="20" prob="0.5" />
+	<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble" />
-	<drop event="Harvest" name="mechanicalParts" count="2" prob=".275" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".112" tool_category="Disassemble" />
-	<drop event="Harvest" name="electronicParts" count="1" prob=".112" tool_category="Disassemble" />
+	<drop event="Harvest" name="carBattery" count="1" prob="0.125" tool_category="Disassemble" />
+	<drop event="Harvest" name="ECOBattery" count="1" prob="0.095" tool_category="Disassemble" />
+	<drop event="Harvest" name="HDBattery" count="1" prob="0.075" tool_category="Disassemble" />
+	<drop event="Harvest" name="mechanicalParts" count="1" prob=".2" tool_category="Disassemble" />
+	<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
+	<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 	<!-- <drop event="Fall" name="cntCar03BlueDamage1" count="1" prob="1.0" stick_chance="1" /> -->
 	<property name="DowngradeBlock" value="cntCar03BlueDamage1" />
 	<property name="BigDecorationRadius" value="5" />
@@ -12491,14 +12526,16 @@ kind of free
 	<drop event="Harvest" name="carBattery" count="1" prob="0.125" tool_category="Disassemble" />
 	<drop event="Harvest" name="ECOBattery" count="1" prob="0.095" tool_category="Disassemble" />
 	<drop event="Harvest" name="HDBattery" count="1" prob="0.075" tool_category="Disassemble" />
-	<drop event="Harvest" name="radiator" count="1" prob="0.41" tool_category="Disassemble" />
-	<drop event="Harvest" name="oil" count="2" prob="0.523" tool_category="Disassemble" />
+	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
+	<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
+	<drop event="Harvest" name="cloth" count="5" prob="0.5" />
 	<drop event="Harvest" name="spring" count="3" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapIron" count="40" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble" />
 	<drop event="Harvest" name="gasCan" count="100" prob="0.7" />
 	<drop event="Harvest" name="gasCan" count="130" prob="0.6" tool_category="Disassemble" /> <!-- together 150 avg -->
-	<drop event="Destroy" name="scrapIron" count="30" prob="1" />
-	<drop event="Harvest" name="mechanicalParts" count="4" prob=".287" tool_category="Disassemble" />
+	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble" />
+	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
+	<drop event="Harvest" name="mechanicalParts" count="2" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
 	<!-- <drop event="Fall" name="cntCar03Damage2" count="1" prob="1.0" stick_chance="1" /> -->
@@ -12527,11 +12564,10 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble" />
 	<drop event="Harvest" name="gasCan" count="170" prob="0.3" />
 	<drop event="Harvest" name="gasCan" count="80" prob="0.6375" tool_category="Disassemble" /> <!-- together 100 avg -->
-	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapIron" count="40" prob="1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="mechanicalParts" count="2" prob=".29" tool_category="Disassemble" />
-	<drop event="Harvest" name="electricParts" count="1" prob=".197" tool_category="Disassemble" />
-	<drop event="Destroy" name="scrapIron" count="30" prob="1" />
+	<drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
+	<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
+	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
 	<property name="BigDecorationRadius" value="5" />
 	<property name="CanDecorateOnSlopes" value="false" />
