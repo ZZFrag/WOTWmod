@@ -1,5 +1,5 @@
 <xui>
-	<ruleset name="default" scale="1.255" stackpanel_scale="1.05">
+	<ruleset name="default" scale="1.100" stackpanel_scale="1.05">
 	
 		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
 			<window name="windowCraftingList"/>
@@ -75,7 +75,7 @@
 		</window_group>
 		
 		<window_group name="workstation_MortarandPestle" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowMortarCraftingList"/>
+			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowToolsMortarandPestle"/>
@@ -97,7 +97,6 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
 		</window_group>
 		
 		<window_group name="workstation_AdvancedToolWorkbench" controller="XUiC_WorkstationWindowGroup">
@@ -155,7 +154,6 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
 		</window_group>
 		
 		<window_group name="workstation_ClothingWorkStation" controller="XUiC_WorkstationWindowGroup">
@@ -164,21 +162,6 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
-		</window_group>
-		
-		<window_group name="workstation_oilPump" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList"/>
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
-		
-		<window_group name="workstation_wallTorchStation" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowFuel" />
-			<window name="windowNonPagingHeader" />
-			<window name="craftingInfoPanel"/>
-			<window name="windowCraftingList"/>
 		</window_group>
 		
 		<!-- War of the Walkers Mod Custom Window Groups End -->
