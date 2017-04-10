@@ -12717,7 +12717,7 @@ kind of free
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Furniture/coffin" param1="main_mesh" />
 	<property name="MultiBlockDim" value="1,1,2" />
-	<property name="LootList" value="1" />
+	<property name="LootList" value="47" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 </block>
 
