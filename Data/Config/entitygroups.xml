@@ -15,7 +15,6 @@
 		<entity name="zombieSteveCrawler" prob="0.06" />
 		<entity name="zombieDarleneCrawler" prob="0.06" />
 		<entity name="zombieArleneCrawler" prob="0.06" />
-		<entity name="zombieMoeCrawler" prob="0.06" />
 		<entity name="zombieJoeCrawler" prob="0.06" />
 		<entity name="zombieBoeCrawler" prob="0.06" />
 	</entitygroup>
@@ -33,7 +32,6 @@
 		<entity name="zombieSteveCrawler" prob="0.1" />
 		<entity name="zombieDarleneCrawler" prob="0.1" />
 		<entity name="zombieArleneCrawler" prob="0.1" />
-		<entity name="zombieMoeCrawler" prob="0.1" />
 		<entity name="zombieJoeCrawler" prob="0.1" />
 		<entity name="zombieBoeCrawler" prob="0.1" />
 		<entity name="SurvivorBob" prob="0.05" />
@@ -59,7 +57,6 @@
 		<entity name="zombieSteveCrawler" prob="0.06" />
 		<entity name="zombieDarleneCrawler" prob="0.06" />
 		<entity name="zombieArleneCrawler" prob="0.06" />
-		<entity name="zombieMoeCrawler" prob="0.06" />
 		<entity name="zombieJoeCrawler" prob="0.06" />
 		<entity name="zombieBoeCrawler" prob="0.06" />
 		<entity name="zombiedog" prob="0.05" />
@@ -192,7 +189,6 @@
 		<entity name="zombieSteveCrawler" prob="0.2" />
 		<entity name="zombieDarleneCrawler" prob="0.2" />
 		<entity name="zombieArleneCrawler" prob="0.2" />
-		<entity name="zombieMoeCrawler" prob="0.2" />
 		<entity name="zombieJoeCrawler" prob="0.2" />
 		<entity name="zombieBoeCrawler" prob="0.2" />
 		<entity name="banditMelee" prob="0.1" />
@@ -315,7 +311,6 @@
 		<entity name="zombieSteveCrawler"/>
 		<entity name="zombieDarleneCrawler"/>
 		<entity name="zombieArleneCrawler"/>
-		<entity name="zombieMoeCrawler"/>
 		<entity name="zombieJoeCrawler"/>
 		<entity name="zombieBoeCrawler"/>
 	</entitygroup>
@@ -523,7 +518,18 @@
 
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />		
-	</entitygroup>	
+	</entitygroup>
+	
+	<entitygroup name="SurvivorGroup">
+		<entity name="SurvivorBob"/>
+		<entity name="SurvivorBill"/>
+		<entity name="SurvivorSheela"/>
+		<entity name="SurvivorEmma"/>
+		<entity name="SurvivorKevin"/>
+		<entity name="SurvivorLarry"/>
+		<entity name="SurvivorHannah"/>
+		<entity name="SurvivorZoey"/>
+	</entitygroup>
 
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<entitygroup name="hordeStageGS1">
