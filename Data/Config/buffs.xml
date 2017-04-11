@@ -280,7 +280,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="FirstAidDeploy" stack="discard" duration="1" buffif="CTRFirstAidDeploy greater 0" debuffif="CTRFirstAidDeploy less 1" type="healthup"
 	icon="FirstAidRadiusIcon" name_key="FirstAidDeployBuff"  description_key="FirstAidDeployBuffDesc" tooltip_key="FirstAidDeployBuffTooltip">
-	<modify id="0" stat="health" amount="15" rate="1"/>
+	<modify id="0" stat="health" amount="5" rate="1"/>
 </buff>
 
 <buff id="FirstAidRadius" stack="discard" duration="1" type="coretemp" buffif="+healthSource gequal 1" debuffif="+healthSource less 1"

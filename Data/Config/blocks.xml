@@ -16566,6 +16566,7 @@ kind of free
 	<property name="Damage_received" value="25" />
 	<property name="Texture" value="284" />
 	<property name="Shape" value="Plate" />
+	<property name="CanPickup" value="false" />
 	<property name="BuffsWhenWalkedOn" value="FirstAidDeploy"/>
 	<property class="RepairItems"> <property name="firstAidKit" value="5" /> </property>
 	<property name="Group" value="Tools/Traps,Medicine" />
