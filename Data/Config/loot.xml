@@ -2217,6 +2217,7 @@
 	<item group="shirts"/>
 	<item group="pants"/>
 	<item group="footware"/>
+	<item name="facialPiercings" prob=".1"/>
 	<item group="safetywear" prob="0.15" />
 	<item group="jacketAll"/>
 </lootgroup>
@@ -2757,12 +2758,14 @@
 	<item name="redDenimPants" prob="2.5"/>
 	<item name="runningShoes" prob="2.5"/>
 	<item name="scrapPlastics" count="1,3"/>
+	<item name="trophyGroup"/>
 	<item name="painkillers"/>
 	<item name="bandage"/>
 	<item name="vitamins"/>
 	<item group="medicine_rare"/>
 	<item group="QuestChallenge" count="1" prob="0.04"/>
 	<item group="treasureMaps" count="1" prob="0.06"/>
+	
 </lootgroup>
 
 <!-- Boss Loot Groups -->
@@ -3090,7 +3093,7 @@
 	<item name="casinoCoin" count="1000"/>
 </lootgroup>
 
-<!--  Lootcontainer 1 Coffin and Cardboard Box Loot Plus Chest01 and 02 -->
+<!--  Lootcontainer 1 Cardboard Box Loot Plus Chest01 and 02 -->
 <lootcontainer id="1" count="0,4" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" open_time="2" loot_quality_template="baseTemplate">
 	<item group="junk"/>
 	<item group="books" prob="0.1"/>
@@ -3111,7 +3114,7 @@
 </lootcontainer>
 
 <!-- Lootcontainer 4 Fridge Loot -->
-<lootcontainer id="4" count="0,2" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="4" loot_quality_template="baseTemplate">
+<lootcontainer id="4" count="0,4" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" open_time="4" loot_quality_template="baseTemplate">
 	<item group="coldfood" prob=".5"/>
 	<item name="bottledWater" count="1,2" prob=".5"/>
 	<item name="emptyJar" count="1,2"/>
@@ -3147,6 +3150,7 @@
 <!-- Lootcontainer 7 Medicine Cabinet Loot -->
 <lootcontainer id="7" count="0,2" size="5,3" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" open_time="5" loot_quality_template="baseTemplate">
 	<item group="medicine"/>
+	<item name="brokenGlass" count="5,15" prob="0.25"/>
 </lootcontainer>
 
 <!-- Lootcontainer 8 Kitchen Sink Cabinet Loot -->
@@ -3200,13 +3204,11 @@
 	<item group="ZombieJunk" />
 	<item group="clothes" prob="0.19" />
 	<item group="rottenFood" prob="0.062" />
-	<item group="hazmatGear" count="1" prob="0.008" />
 	<item group="sportingGoods" prob="0.1" />
 	<item group="melee" count="1" prob="0.075" />
 	<item group="tools" prob="0.05" />
 	<item group="QuestChallenge" count="1" prob="0.0105" />
 	<item group="treasureMaps" count="1" prob="0.0105" /> <!-- total 2% for a quest thing -->
-	<item name="facialPiercings" prob=".008" />
 </lootcontainer>
 
 <!-- Lootcontainer 16 Metal Garbage Can Loot -->
@@ -3215,7 +3217,7 @@
 </lootcontainer>
 
 <!-- Lootcontainer 17 Zombie Cop Loot -->
-<lootcontainer id="17" count="1,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2" loot_quality_template="baseTemplate">
+<lootcontainer id="17" count="1,3" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2" loot_quality_template="baseTemplate">
 	<item group="pistol+ammo" />
 	<item group="shotgun+ammo" />
 	<item group="guns+ammo" count="1" prob="0.2" />
@@ -3226,12 +3228,16 @@
 	<item name="militaryFiber" count="1,4" prob="0.04" />
 	<item group="QuestChain" count="1" prob="0.015" />
 	<item group="QuestChallenge" count="1" prob="0.065" />
+	<item name="clubIron" count="1"/>
+	<item name="scrapBrass" count="5"/>
+	<item name="paper" count="5,10"/>
+	<item name="flashlight02" prob="0.5"/>
 </lootcontainer>
 
 <!-- Lootcontainer 19 Car Loot -->
 <lootcontainer id="19" count="0,2" size="7,4" buff="carAlarm" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5" loot_quality_template="baseTemplate">
 	<item group="automotive+tools+junk"/>
-	<item name="miningHelmet" prob="0.035"/>
+	<item name="miningHelmet" prob="0.025"/>
 </lootcontainer>
 
 <!-- Lootcontainer 20 Free (Old AC Units) -->
@@ -3239,7 +3245,9 @@
 <!-- Lootcontainer 21 Zombie Nurse Loot -->
 <lootcontainer id="21" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2" loot_quality_template="baseTemplate">
 	<item group="medicine" />
-	<item name="oldCash" count="1,20" prob="0.5" />
+	<item name="paper" count="5,10" prob="0.5"/>
+	<item name="oldCash" count="1,20" prob="0.5"/>
+	<item group="hazmatGear" count="1" prob="0.04"/>
 </lootcontainer>
 
 <!-- Lootcontainer 22 Garage Storage Loot Container -->
@@ -3263,7 +3271,7 @@
 
 <!-- Lootcontainer 25 Birds Nest -->
 <lootcontainer id="25" count="0,2" size="2,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="1" loot_quality_template="baseTemplate">
-	<item name="egg" count="1,2" prob="0.3"/>
+	<item name="egg" count="1,3" prob="0.3"/>
 	<item name="feather" count="1,10" prob="0.75"/>
 </lootcontainer>
 	
@@ -3383,10 +3391,10 @@
 	<item group="cannedfood" count="1" prob="0.2" />
 	<item name="painkillers" count="1,2" prob="0.1" />
 	<item group="guns+ammo" prob="0.05" />
-	<item group="hazmatGear" count="1" prob="0.008" />
 	<item group="QuestChallenge" count="1" prob="0.035" />
 	<item group="treasureMaps" count="1" prob="0.035" /> <!-- total 2.2% for a quest thing -->
 	<item group="flares" count="1" prob="0.025" />
+	<item name="candyTin" prob="0.5"/>
 </lootcontainer>
 
 <!-- Lootcontainer 39 Shotgun Messiah Loot UNUSED -->
@@ -3616,7 +3624,7 @@
 </lootcontainer>
 
 <!-- Lootcontainer 65 Hazmat Zombie Loot -->
-<lootcontainer id="65" count="0,3" size="8,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2" loot_quality_template="baseTemplate">
+<lootcontainer id="65" count="0,4" size="8,4" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="2" loot_quality_template="baseTemplate">
 	<item group="hazmatGear" count="1"/>
 	<item group="medicine_rare" prob="0.2"/>
 	<item name="grainAlcohol" count="1,4" prob=".2"/>
@@ -3641,13 +3649,14 @@
 </lootcontainer>
 
 <!-- Lootcontainer 67 Toilet Loot -->
-<lootcontainer id="67" count="0,2" size="5,3" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" loot_quality_template="baseTemplate">
+<lootcontainer id="67" count="0,2" size="2,2" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" loot_quality_template="baseTemplate">
 	<item group="toiletLoot" count="1"/>
 </lootcontainer>
 
 <!-- Lootcontainer 68 Dumpster Loot -->
 <lootcontainer id="68" count="0,4" size="8,4" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" open_time="5" loot_quality_template="baseTemplate">
 	<item group="junk" count="1"/>
+	<item group="garbage" count="1"/>
 </lootcontainer>
 
 <!-- Lootcontainer 69 empty, storage containers the player crafts ??? -->
