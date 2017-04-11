@@ -95,7 +95,8 @@
 
 	<!-- Basic Survival 7 - Craft a Bedroll /> -->	
 	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_map_bed" category_key="Quest">
-		<objective type="FetchKeep" id="yuccaFibers" value="20" />
+		<objective type="FetchKeep" id="cloth" value="5" />
+		<objective type="FetchKeep" id="cottonPlant" value="10" />
 		<objective type="Craft" id="bedroll" value="1" />
 		<objective type="BlockPlace" id="bedroll" value="1" />
 		
@@ -1313,7 +1314,7 @@
 	repeatable="true"
 	category_key="challenge"
 	difficulty="easy">
-		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="clubWood" value="1" />
 		<objective type="FetchKeep" id="scrapIron" value="100" />
 		<objective type="Craft" id="clubIron" value="1" />
 		<reward type="Quest" id="challenge_ironclub2" />
@@ -1345,7 +1346,7 @@
 	repeatable="true"
 	category_key="challenge"
 	difficulty="easy">
-		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="clubIron" value="1" />
 		<objective type="FetchKeep" id="forgedIron" value="16" />
 		<objective type="Craft" id="clubBarbed" value="1" />
 		<reward type="Quest" id="challenge_barbedclub2" />
@@ -1377,7 +1378,7 @@
 	repeatable="true"
 	category_key="challenge"
 	difficulty="easy">
-		<objective type="FetchKeep" id="wood" value="20" />
+		<objective type="FetchKeep" id="clubBarbed" value="1" />
 		<objective type="FetchKeep" id="forgedIron" value="20" />
 		<objective type="Craft" id="clubSpiked" value="1" />
 		<reward type="Quest" id="challenge_spikedclub2" />
@@ -1409,7 +1410,7 @@
 	repeatable="true"
 	category_key="challenge"
 	difficulty="easy">
-		<objective type="FetchKeep" id="wood" value="25" />
+		<objective type="FetchKeep" id="clubSpiked" value="1" />
 		<objective type="FetchKeep" id="ForgedTungsten" value="25" />
 		<objective type="Craft" id="ClubTungsten" value="1" />
 		<reward type="Quest" id="challenge_tungstenclub2" />
@@ -2209,9 +2210,9 @@
 	repeatable="false"
 	category_key="Quest"
 	difficulty="easy">
-		<objective type="FetchKeep" id="scrapIron" value="75" />
-		<objective type="FetchKeep" id="yuccaFibers" value="11" />
-		<objective type="FetchKeep" id="wood" value="11" />
+		<objective type="FetchKeep" id="scrapIron" value="85" />
+		<objective type="FetchKeep" id="stoneAxe" value="1" />
+		<objective type="FetchKeep" id="stoneShovel" value="1" />
 		<objective type="Craft" id="scrapIronAxe" value="1" />
 		<objective type="Craft" id="scrapIronShovel" value="1" />
 		<reward type="Exp" value="1500" />
