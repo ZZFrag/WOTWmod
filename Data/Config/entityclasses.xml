@@ -1277,13 +1277,13 @@
 		<property name="Archetype" value="ZombieSpiderUMA1"/>
 		<property name="CanClimbVertical" value="true" />
 		<property name="HandItem" value="handZombie02" />
-		<property name="MaxHealth" value="150" />
+		<property name="MaxHealth" value="300" />
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="1.2" />
-		<property name="ExperienceGain" value="1700"/>
+		<property name="ExperienceGain" value="850"/>
 		<property name="LootListOnDeath" value="66" />
 		<property name="WalkType" value="8" />
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
@@ -1297,13 +1297,13 @@
 		<property name="Archetype" value="ZombieCrawlerUMA2"/>
 		<property name="CanClimbVertical" value="true" />
 		<property name="HandItem" value="handZombie02" />
-		<property name="MaxHealth" value="150" />
+		<property name="MaxHealth" value="300" />
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="1.2" />
-		<property name="ExperienceGain" value="1700"/>
+		<property name="ExperienceGain" value="850"/>
 		<property name="LootListOnDeath" value="66" />
 		<property name="WalkType" value="8" />
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
@@ -1317,13 +1317,13 @@
 		<property name="Archetype" value="ZombieCrawlerUMA3"/>
 		<property name="CanClimbVertical" value="true" />
 		<property name="HandItem" value="handZombie02" />
-		<property name="MaxHealth" value="150" />
+		<property name="MaxHealth" value="300" />
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="1.2" />
-		<property name="ExperienceGain" value="1700"/>
+		<property name="ExperienceGain" value="850"/>
 		<property name="LootListOnDeath" value="66" />
 		<property name="WalkType" value="8" />
 		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
