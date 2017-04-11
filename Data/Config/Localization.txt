@@ -5415,5 +5415,4 @@ PlayerStarterCrate,blocks,Block,KgNone,Starter Crate,,,,
 PlayerStarterCrateDesc,blocks,Block,KgNone,"Place this on ground when quest is active. Contains content that will help you get started.","Placez-le sur le sol lorsque la quête est active. Contient du contenu qui vous aidera à démarrer.","Legen Sie diese auf den Boden, wenn Quest aktiv ist. Enthält Inhalte, die Ihnen helfen, loszulegen.",,"Coloca esto en el suelo cuando la misión está activa. Contiene contenido que le ayudará a empezar."
 MeleeBanditCorpse,blocks,Block,KgNone,Melee Bandit Loot,Loot de bandit de mêlée,Nahkampf-Bandit-Beute,,Bote del bandido de Melee
 RangedBanditCorpse,blocks,Block,KgNone,Ranged Bandit Loot,Loot de bandit à distance,Ranged Bandit Loot,,Botín a distancia bandido
-MeleeSurvivorCorpse,blocks,Block,KgNone,Melee Survivor Loot,Loot Survivor Mêlée,Nahkampf-Überlebender,,Golpe de superviviente de cuerpo a cuerpo
-RangedSurvivorCorpse,blocks,Block,KgNone,Ranged Survivor Loot,Roulé Survivor Loot,Ranged Survivor Loot,,Botín de superviviente a distancia
+SurvivorCorpse,blocks,Block,KgNone,Survivor Loot,Loot Survivor,Nahkampf-Überlebender,,Golpe de superviviente de cuerpo a cuerpo
