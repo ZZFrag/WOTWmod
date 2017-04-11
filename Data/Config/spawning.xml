@@ -1274,9 +1274,9 @@
 			<property name="EntityGroupName"    value="BanditGroup" />
 			<property name="Time"               value="Any" />
 			<property name="DelayBetweenSpawns" value="0" />
-			<property name="TotalAlive"         value="6" />
-			<property name="TotalPerWave"       value="6" />
-			<property name="DaysToRespawnIfPlayerLeft" value="3" />
+			<property name="TotalAlive"         value="8" />
+			<property name="TotalPerWave"       value="8" />
+			<property name="DaysToRespawnIfPlayerLeft" value="2" />
 			<property name="AttackPlayerAtOnce" value="false" />
 		</day>
 	</entityspawner>

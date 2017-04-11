@@ -8,7 +8,7 @@
     <property name="AllowedTownships" value="wilderness" />
     <property name="AllowedBiomes" value="pine_forest,forest,snow" />
     <property name="StaticSpawner.Class" value="SurvivorSpawn" />
-    <property name="StaticSpawner.Size" value="32,2,32" />
+    <property name="StaticSpawner.Size" value="16,2,16" />
     <property name="StaticSpawner.Trigger" value="160" />
     <property name="MaxPerHub" value="1" />
 </prefab>
