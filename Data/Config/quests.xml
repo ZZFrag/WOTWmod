@@ -1584,7 +1584,6 @@
 		<objective type="ZombieKill" id="zombieSteveCrawler" value="1" />
 		<objective type="ZombieKill" id="zombieDarleneCrawler" value="1" />
 		<objective type="ZombieKill" id="zombieArleneCrawler" value="1" />
-		<objective type="ZombieKill" id="zombieMoeCrawler" value="1" />
 		<objective type="ZombieKill" id="zombieJoeCrawler" value="1" />
 		<objective type="ZombieKill" id="zombieBoeCrawler" value="1" />
 		<reward type="Exp" value="500" />
@@ -1604,7 +1603,6 @@
 		<objective type="ZombieKill" id="zombieSteveCrawler" value="2" />
 		<objective type="ZombieKill" id="zombieDarleneCrawler" value="2" />
 		<objective type="ZombieKill" id="zombieArleneCrawler" value="2" />
-		<objective type="ZombieKill" id="zombieMoeCrawler" value="2" />
 		<objective type="ZombieKill" id="zombieJoeCrawler" value="2" />
 		<objective type="ZombieKill" id="zombieBoeCrawler" value="2" />
 			<requirement type="Group" id="MeleeGroup" value="OR">

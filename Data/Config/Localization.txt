@@ -5179,7 +5179,6 @@ cntAutomotiveStoreBookcase,blocks,Block,KgNone,Automotive Books,,,,
 cntLootCrateAutomotiveStore,blocks,Block,KgNone,Automotive Loot Crate,,,,
 zombieDarleneCrawler,entityclasses,Entity,KgNone,Crawler Darlene,crawler Darlene,rastreador Darlene,,Darlene Crawler
 zombieArleneCrawler,entityclasses,Entity,KgNone,Crawer Arlene,crawler Arlene,rastreador Arlene,Arlene Crawler
-zombieMoeCrawler,entityclasses,Entity,KgNone,Crawler Moe,crawler Moe,rastreador Moe,Moe Crawler
 zombieJoeCrawler,entityclasses,Entity,KgNone,Crawler Joe,crawler Joe,rastreador Joe,Joe Crawler
 zombieBoeCrawler,entityclasses,Entity,KgNone,Crawler Boe,crawler Bow,rastreador Boe,Boe Crawler
 animalBoar,entityclasses,Entity,KgNone,Boar,verrat,verraco,,Eber

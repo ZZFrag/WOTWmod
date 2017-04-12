@@ -346,25 +346,6 @@
 		<property name="RootMotion"   value="true" />
 		<property name="MaxHealth" value="150" />
 	</entity_class>
-	<entity_class name="zombieMoeCrawler" extends="zombie01">
-		<property name="Mesh"   value="Zombies/zombieStandardSteveRagdoll" />
-		<property name="SoundRandom"     value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
-		<property name="SoundAlert"     value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
-		<property name="SoundSense"  value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
-		<property name="SoundHurt"    value="Enemies/Base_Zombie_Male2/zombiemale2pain" />
-		<property name="SoundDeath"   value="Enemies/Base_Zombie_Male2/zombiemale2death" />
-		<property name="SoundAttack"  value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
-		<property name="AvatarController" value="AvatarZombie01Controller" />
-		<property name="HandItem"  value="handZombie02" />
-		<property name="Class"  value="EntityZombieCrawl" />
-		<property name="WalkType"  value="4" />
-		<property name="CanClimbLadders"     value="false" />
-		<property name="RotateToGround" value="true"/>
-		<property name="ExperienceGain" value="65"/>
-		<property name="PhysicsBody" value="zombieStandard" />
-		<property name="RootMotion"   value="true" />
-		<property name="MaxHealth" value="150" />
-	</entity_class>
 	<entity_class name="zombieJoeCrawler" extends="zombie01">
 		<property name="Mesh"   value="Zombies/zombieStandardJoeRagdoll" />
 		<property name="AvatarController" value="AvatarZombie01Controller" />
