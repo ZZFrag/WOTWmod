@@ -1553,6 +1553,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="animalHide" count="1"/>
 </recipe>
 
+<recipe name="animalHide" count="1" tooltip="ttScrapMetalBrass">
+	<wildcard_forge_category />
+</recipe>
+
 <recipe name="Kevlar" count="2" craft_exp_gain="25">
     <ingredient name="HouseholdChemicals" count="1"/>
     <ingredient name="cloth" count="5"/>

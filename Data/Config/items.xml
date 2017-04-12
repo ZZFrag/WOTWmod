@@ -1120,14 +1120,15 @@ Mesh files no longer used:
 	<property name="Extends" value="handMaster" />
 	<property name="IsDeveloper" value="true" />
 	<property name="Degradation" value="99999" param1="true" />
-	<property class="Action0"> <!-- AttackAction -->
+	<property class="Action0">
+		<!-- AttackAction -->
 		<property name="Range" value="1.75" />
 		<property name="DamageEntity" value="20" />
 		<property name="DamageBlock" value="250" />
 		<property name="Buff" value="gainInjury_heavyattack_Trigger,infection,stunned" />
-		<property name="Buff_chance" value="0.8,0.1,0.5" />
-	</property>
-	<property class="Action1"> <!-- UseAction -->
+		<property name="Buff_chance" value="0.8,0.1,0.5" /></property>
+	<property class="Action1">
+		<!-- UseAction -->
 		<property name="Class" value="Vomit" />
 		<property name="Delay" value="0.35" />
 		<property name="Range" value="200" />
@@ -1135,7 +1136,7 @@ Mesh files no longer used:
 		<property name="Infinite_ammo" value="true" />
 		<property name="Magazine_items" value="vomitZombieProjectile" />
 		<property name="Rays_spread" value="0.5" />
- 		<!-- to be made redundant by the more flexible <property name="Magazine_item_ray_spreads" value="0.5" /> ... when it works -->
+		<!-- to be made redundant by the more flexible <property name="Magazine_item_ray_spreads" value="0.5" /> ... when it works -->
 		<property name="Reload_time" value="2" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_warning" value="Enemies/Acid_Puking_Hulk/hulkvomitwarning" />
@@ -1143,26 +1144,25 @@ Mesh files no longer used:
 		<property name="Sound_repeat" value="" />
 		<property name="Sound_end" value="" />
 		<property name="Sound_empty" value="" />
-		<property name="Sound_reload" value="" />
-		<property name="Buff" value="gainInjury_heavyattack_Trigger,infection,biteMark" />
-		<property name="Buff_chance" value="0.6,0.2,0.55" />
-	</property>
+		<property name="Sound_reload" value="" /></property>
 </item>
-
 <item id="81" name="vomitZombieProjectile">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab" />
 	<property name="Material" value="organic" />
 	<property name="IsDeveloper" value="true" />
 	<property class="Action1">
 		<property name="Class" value="Projectile" />
-		<property name="DamageEntity" value="10" />
-		<property name="DamageBlock" value="150" />
 		<property name="Explosion.ParticleIndex" value="7" />
 		<property name="Velocity" value="20" />
 		<property name="FlyTime" value=".50" />
 		<property name="LifeTime" value="4" />
 		<property name="CollisionRadius" value="0.5" />
-	</property>
+		<property name="Buff" value="infection,smelly" />
+		<property name="Buff_chance" value="1" /></property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="10" />
+		<property name="BlockDamage" value="150" /></property>
 </item>
 
 <item id="82" name="stingHornet">
@@ -3460,8 +3460,8 @@ which does not exist, yet. -->
 <item id="364" name="animalHideBoots"> <!-- armorMasterHideArmor -->
 	<property name="Insulation" value="2"/>
 	<property name="Encumbrance" value="0.02" />
-	<property name="Material" value="leather" />
-	<property name="RepairTools" value="leather" />
+	<property name="Material" value="animalHide" />
+	<property name="RepairTools" value="animalHide" />
 	<property name="DegradationBreaksAfter" value="false" />
 	<property name="FuelValue" value="20" />
 	<property name="EconomicValue" value="120" />
@@ -4538,8 +4538,8 @@ which does not exist, yet. -->
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="HoldType" value="45" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-	<property name="Material" value="leather" />
-	<property name="RepairTools" value="leather" />
+	<property name="Material" value="animalHide" />
+	<property name="RepairTools" value="animalHide" />
  	<property name="DegradationBreaksAfter" value="false" />
 	<property name="FuelValue" value="75" />
 	<property name="EconomicValue" value="480" />
@@ -7835,9 +7835,10 @@ which does not exist, yet. -->
 <item id="1312" name="animalHide">
 	<property name="Meshfile" value="Items/Crafting/animal_hidePrefab" />
 	<property name="HoldType" value="21" />
-	<property name="Material" value="leather" />
+	<property name="Material" value="animalHide" />
+	<property name="RepairAmount" value="80" />
 	<property name="Weight" value="5" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="250" /> <!-- STK resource -->
 	<property name="FuelValue" value="5" />
 	<property name="EconomicValue" value="20" />
 	<property name="Group" value="Resources" />
@@ -9104,7 +9105,7 @@ which does not exist, yet. -->
 
 <item id="1464" name="unit_stone">
 	<property name="Extends" value="unit_iron" />
-	<property name="CustomIcon" value="cobblestones" />
+	<property name="CustomIcon" value="rockSmall" />
 	<property name="Material" value="stone" />
 	<property name="MeltTimePerUnit" value="0.075" />
 	<property name="IsDeveloper" value="true" />
