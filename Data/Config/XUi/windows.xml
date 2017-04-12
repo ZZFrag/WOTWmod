@@ -1439,7 +1439,7 @@
 					</panel>
 					<panel height="30" width="340" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" atlas="ItemIconAtlas" sprite="ui_game_symbol_seats"/>
-						<label depth="1" width="180" pos="30,-2" name="lblPassengers" font_size="22" text="{passengersTitle}: [DECEA3]{passengers|once}[-]" />
+						<label depth="1" width="180" pos="30,-2" name="lblPassengers" font_size="22" text="{passengerstitle}: [DECEA3]{passengers|once}[-]" />
 					</panel>
 					<panel height="30" width="340" disableautobackground="true">
 						<sprite depth="1" name="windowIcon" style="icon22px" pos="2,-2" atlas="ItemIconAtlas" sprite="ui_game_symbol_gas"/>
