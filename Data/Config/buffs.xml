@@ -848,9 +848,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 <buff id="carAlarm3" duration="2.5" smell="exLargeSmell" onexpired="carAlarm4" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Run!" icon="ui_game_symbol_drunk"/>
 <buff id="carAlarm4" duration="2.5" smell="exLargeSmell" castsound="Misc/keystone_impact_overlay" onexpiredsound="Misc/keystone_impact_overlay" name_key="Car Alarm" tooltip_key="Zombies are coming" icon="ui_game_symbol_drunk"/>
 
-<!-- Smelly Buff -->
-<buff id="smelly" duration="30" smell="largeSmell" icon="ui_game_symbol_dysentery" name_key="smelly" description_key="smellyDesc" tooltip_key="smellyTooltip"/>
-
 <!-- Immune System Buffs -->
 
 <buff id="ActiveImmunity" buffif="immune gequal 1" debuffif="immune lequal 0" type="speedmodifier"/>
