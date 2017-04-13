@@ -2230,5 +2230,12 @@
 		<biome_spawn_rule name="wasteland_hub">
 			<distance_from_center range="0,1250"/> 
 		</biome_spawn_rule>
+
+		<!-- BIOME TEST (REMOVE AFTER USE) 
+	
+		<biome_spawn_rule name="wasteland_hub">
+			<terrain_generator range="-60,255"/> 
+		</biome_spawn_rule>
+		-->
 	</biome_spawn_rules>
 </rwgmixer>
