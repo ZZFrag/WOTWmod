@@ -2035,7 +2035,7 @@
 	<item name="oldCash" count="1,6" prob="0.3"/>
 	<item group="trophyGroup"/>
 	<item name="candleStick"/>
-	<item name="glassCTRSheet"/>
+	<item name="brokenGlass" count="1,3"/>
 	<item name="doorKnob" count="1"/>
 	<item name="femur" count="1"/>
 	<item name="shortMetalPipe" count="1"/>
