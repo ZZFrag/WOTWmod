@@ -2372,7 +2372,7 @@
 		<reward type="Skill" id="Armor Smithing" value="15" />
 		<reward type="Skill" id="Heavy Armor Smithing" value="15" />
 		<reward type="Skill" id="ProtectionClassLevel3" />
-		<reward type="Quest" id="classtrainingprotection3" />
+		<reward type="Quest" id="classtrainingprotection4" />
 	</quest>
 	
 	<quest id="classtrainingprotection4"
