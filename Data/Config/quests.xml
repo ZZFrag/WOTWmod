@@ -2211,8 +2211,8 @@
 		<objective type="FetchKeep" id="scrapIron" value="85" />
 		<objective type="FetchKeep" id="stoneAxe" value="1" />
 		<objective type="FetchKeep" id="stoneShovel" value="1" />
-		<objective type="Craft" id="scrapIronAxe" value="1" />
-		<objective type="Craft" id="scrapIronShovel" value="1" />
+		<objective type="Craft" id="ScrapIronAxe" value="1" />
+		<objective type="Craft" id="ScrapIronShovel" value="1" />
 		<reward type="Exp" value="1500" />
 		<reward type="SkillPoints" value="1" />
 		<reward type="Skill" id="Iron Tool Crafting" value="1" />
@@ -2235,8 +2235,8 @@
 	category_key="Quest"
 	difficulty="easy">
 		<objective type="Repair" id="wrench" value="1" />
-		<objective type="Scrap" id="scrapIronAxe" value="1" />
-		<objective type="Scrap" id="scrapIronShovel" value="1" />
+		<objective type="Scrap" id="ScrapIronAxe" value="1" />
+		<objective type="Scrap" id="ScrapIronShovel" value="1" />
 		<reward type="Exp" value="2000" />
 		<reward type="SkillPoints" value="2" />
 		<reward type="Skill" id="The Fixer" value="1" />
