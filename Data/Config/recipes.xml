@@ -1456,8 +1456,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="calipers" count="1" craft_area="forge" craft_tool="toolAndDieSet" material_based="true">
-	<ingredient name="forgedSteel" count="30"/>
-	<ingredient name="unit_clay" count="30"/>
+	<ingredient name="unit_iron" count="600"/>
+	<ingredient name="unit_clay" count="300"/>
 </recipe>
 
 <recipe name="cookingGrill" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
