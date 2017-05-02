@@ -14937,7 +14937,7 @@ kind of free
 
 <block id="1775" name="burningBarrel">
 	<property name="Extends" value="metalNoUpgradeMaster" />
-	<property name="CustomIcon" value="oilBarrel" />
+	<property name="CustomIcon" value="burningBarrel" />
 	<property name="CanPickup" value="true" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
