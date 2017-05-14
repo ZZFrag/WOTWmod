@@ -643,7 +643,7 @@
 			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.4"/>
 			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_ZombieZoo_city(by_Wsiegel)" max_count="1" prob="0.2"/>
-			<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.2"/>
+		<!--	<prefab name="xcostum_strange_cornfield(by_magoli)" max_count="1" prob="0.2"/> -->
 			<prefab name="xcostum_shootingrange(by_magoli)" max_count="1" prob="0.1"/>
 			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.4"/>
 		</prefab_rule>			
