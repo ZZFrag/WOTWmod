@@ -1461,7 +1461,7 @@
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunMP5Bandit,10mmBulletBandit" />
 	</entity_class>
 	<!-- Bandits Start -->
-	<entity_class name="banditMelee">
+	<entity_class name="BanditTemplateMale">
 		<property name="EntityType" value="Zombie"/>
 		<!-- Mesh and class properties -->
 		<property name="AvatarController" value="AvatarUMAController" />
@@ -1473,11 +1473,11 @@
 		<property name="PhysicsBody" value="Player" />
 		<property name="Archetype" value="BanditMelee"/>
 		<!-- AI properties -->
-		<property name="AITask-1" value="ApproachAndAttackTarget" param1="EntityEnemy"/>
-		<property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-		<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
-		<property name="AITask-4" value="BreakDoor" />
-		<property name="AITask-5" value="BreakBlock" />
+		<property name="AITask-1" value="Territorial" param1="10" />
+		<property name="AITask-2" value="RangedAttackTarget2" param1="0" param2="5"/>
+		<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityEnemy"/>
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntitySurvivor"/>
 		<property name="AITask-6" value="ApproachSpot"/>
 		<property name="AITask-7" value="Wander"/>
 		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy"/>
@@ -1488,9 +1488,7 @@
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
 		<property name="AITarget-7" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
 		<!-- General entity properties -->
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="BanditclubSpiked" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="BanditclubSpiked" />
-		<property name="MaxHealth" value="150" />
+		<property name="MaxHealth" value="200" />
 		<property name="MaxViewAngle" value="150" />
 		<property name="Weight" value="70" />
 		<property name="WanderSpeed" value="0.5" />
@@ -1512,144 +1510,71 @@
 		<property name="SoundDeath" value="malehatedeath" />
 		<property name="SoundAttack" value="malehateattack" />
 		<property name="TimeStayAfterDeath" value="5" />
-		<property name="LootListOnDeath" value="71" />
-		<property name="CorpseBlock" value="MeleeBanditCorpse"/>
+		<property name="CorpseBlock" value="RangedBanditCorpse"/>
 		<property name="CorpseBlockChance" value="1"/>
 		<property name="ExperienceGain" value="1500"/>
 		<property name="DeadBodyHitPoints" value="15" />
 		<property name="HasDeathAnim" value="true" />
 	</entity_class>
-	<entity_class name="banditRanged" extends="banditMelee">
-		<property name="Archetype" value="BanditRanged"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunBanditPistol,9mmBanditBullet" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunBanditPistol,9mmBanditBullet" />
-		<property name="AttackTimeoutDay" value="0.5" />
-		<property name="AttackTimeoutNight" value="0.5" />
-		<!-- AI properties -->
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="5"/>
-		<property name="AITask-2" value="ApproachAndAttackTargetNPC" param1="EntityAlive"/>
-		<property name="AITask-3" value="ApproachSpot"/>
-		<property name="AITask-4" value="Wander"/>
-		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy"/>
-		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityPlayer"/>
-		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntitySurvivor"/>
-		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityEnemy"/>
-		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
-		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntitySurvivor"/>
-		<property name="LootListOnDeath" value="72" />
-		<property name="CorpseBlock" value="RangedBanditCorpse"/>
+	<entity_class name="BanditTemplateFemale" extends="BanditTemplateMale">
+		<property name="SoundRandom" value="" />
+		<property name="SoundAlert" value="" />
+		<property name="SoundSense" value="" />
+		<property name="SoundAttack" value="" />
+		<property name="SoundHurt" value="player2painlg" />
+		<property name="SoundHurtSmall" value="player2painsm" />
+		<property name="SoundDeath" value="player2death" />
+		<property name="SoundStamina" value="player2stamina" />
+		<property name="SoundDrownPain" value="player2drownsurface" />
+		<property name="SoundWaterSurface" value="player2drownsurface" />
+		<property name="SoundDrownDeath" value="player2drowndeath" />
+		<property name="SoundJump" value="player2Jump" />
+		<property name="SoundLandSoft" value="player2LandSoft" />
+		<property name="SoundLandHard" value="player2LandHard" />
+		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
+		<property name="CorpseBlock" value="MeleeBanditCorpse"/>
 	</entity_class>
-	<entity_class name="banditLeader" extends="banditMelee">
-		<property name="Archetype" value="BanditLeader"/>
+<!-- Male Ranged -->
+	<entity_class name="BanditAndre" extends="BanditTemplateMale">
+		<property name="Archetype" value="BanditAndre"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunRocketLauncherBandit,rocketBandit" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunRocketLauncherBandit,rocketBandit" />
+	</entity_class>
+	<entity_class name="BanditBilly" extends="BanditTemplateMale">
+		<property name="Archetype" value="BanditBilly"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gun44MagnumBandit,44MagBulletBandit" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gun44MagnumBandit,44MagBulletBandit" />
+	</entity_class>
+	<entity_class name="BanditRoger" extends="BanditTemplateMale">
+		<property name="Archetype" value="BanditRoger"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSawedOffPumpShotgunBandit,shotgunShellBandit" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSawedOffPumpShotgunBandit,shotgunShellBandit" />
+	</entity_class>
+	<entity_class name="BanditKane" extends="BanditTemplateMale">
+		<property name="Archetype" value="BanditKane"/>
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunAK47Bandit,762mmBulletBandit" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunAK47Bandit,762mmBulletBandit" />
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>
-		<property name="CorpseBlock" value="RangedBanditCorpse"/>
 	</entity_class>
-	<entity_class name="BanditBilly" extends="banditMelee">
-		<property name="Archetype" value="BanditBilly"/>
+<!-- Female Melee -->
+	<entity_class name="BanditShahala" extends="BanditTemplateFemale">
+		<property name="Archetype" value="BanditShahala"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="BanditclubSpiked" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="BanditclubSpiked" />
+	</entity_class>
+	<entity_class name="BanditMichelle" extends="BanditTemplateFemale">
+		<property name="Archetype" value="BanditMichelle"/>
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubBarbedBandit" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubBarbedBandit" />
 	</entity_class>
-	<entity_class name="BanditSasha" extends="banditMelee">
+		<entity_class name="BanditSasha" extends="BanditTemplateFemale">
 		<property name="Archetype" value="BanditSasha"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSawedOffPumpShotgunBandit,shotgunShellBandit" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSawedOffPumpShotgunBandit,shotgunShellBandit" />
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>
-		<property name="SoundRandom" value="" />
-		<property name="SoundAlert" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAttack" value="" />
-		<property name="SoundHurt" value="Player_Female/player2painlg" />
-		<property name="SoundHurtSmall" value="Player_Female/player2painsm" />
-		<property name="SoundDeath" value="Player_Female/player2death" />
-		<property name="SoundStamina" value="Player_Female/player2stamina" />
-		<property name="SoundDrownPain" value="Player_Female/player2drownpain" />
-		<property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
-		<property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
-		<property name="SoundJump" value="Player_Male/player2Jump" />
-		<property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
-		<property name="SoundLandHard" value="Player_Male/player2LandHard" />
-		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="huntingKnifeBandit" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="huntingKnifeBandit" />
 	</entity_class>
-	<entity_class name="BanditDwarfSherry" extends="banditMelee">
+	<entity_class name="BanditDwarfSherry" extends="BanditTemplateFemale">
 		<property name="Archetype" value="BanditDwarfSherry"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSawedOffPumpShotgunBandit,shotgunShellBandit" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSawedOffPumpShotgunBandit,shotgunShellBandit" />
-		<property name="CorpseBlock" value="RangedBanditCorpse"/>
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>
-		<property name="SoundRandom" value="" />
-		<property name="SoundAlert" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAttack" value="" />
-		<property name="SoundHurt" value="Player_Female/player2painlg" />
-		<property name="SoundHurtSmall" value="Player_Female/player2painsm" />
-		<property name="SoundDeath" value="Player_Female/player2death" />
-		<property name="SoundStamina" value="Player_Female/player2stamina" />
-		<property name="SoundDrownPain" value="Player_Female/player2drownpain" />
-		<property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
-		<property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
-		<property name="SoundJump" value="Player_Male/player2Jump" />
-		<property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
-		<property name="SoundLandHard" value="Player_Male/player2LandHard" />
-		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-	</entity_class>
-	<entity_class name="BanditRoger" extends="banditMelee">
-		<property name="Archetype" value="BanditRoger"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunMP5Bandit,10mmBulletBandit" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunMP5Bandit,10mmBulletBandit" />
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>
-		<property name="CorpseBlock" value="RangedBanditCorpse"/>
-	</entity_class>
-	<entity_class name="BanditKane" extends="banditMelee">
-		<property name="Archetype" value="BanditKane"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunSniperRifleBandit,762mmBulletBandit" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunSniperRifleBandit,762mmBulletBandit" />
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>
-		<property name="CorpseBlock" value="RangedBanditCorpse"/>
-	</entity_class>
-	<entity_class name="BanditShahala" extends="banditMelee">
-		<property name="Archetype" value="BanditShahala"/>
-		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunRocketLauncherBandit,rocketBandit" />
-		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunRocketLauncherBandit,rocketBandit" />
-		<property name="AITask-1" value="RangedAttackTarget2" param1="0" param2="20"/>
-		<property name="SoundRandom" value="" />
-		<property name="SoundAlert" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAttack" value="" />
-		<property name="SoundHurt" value="Player_Female/player2painlg" />
-		<property name="SoundHurtSmall" value="Player_Female/player2painsm" />
-		<property name="SoundDeath" value="Player_Female/player2death" />
-		<property name="SoundStamina" value="Player_Female/player2stamina" />
-		<property name="SoundDrownPain" value="Player_Female/player2drownpain" />
-		<property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
-		<property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
-		<property name="SoundJump" value="Player_Male/player2Jump" />
-		<property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
-		<property name="SoundLandHard" value="Player_Male/player2LandHard" />
-		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<property name="CorpseBlock" value="RangedBanditCorpse"/>
-	</entity_class>
-	<entity_class name="BanditMichelle" extends="banditMelee">
-		<property name="Archetype" value="BanditMichelle"/>
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="BanditMachete" />
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="BanditMachete" />
-		<property name="SoundRandom" value="" />
-		<property name="SoundAlert" value="" />
-		<property name="SoundSense" value="" />
-		<property name="SoundAttack" value="" />
-		<property name="SoundHurt" value="Player_Female/player2painlg" />
-		<property name="SoundHurtSmall" value="Player_Female/player2painsm" />
-		<property name="SoundDeath" value="Player_Female/player2death" />
-		<property name="SoundStamina" value="Player_Female/player2stamina" />
-		<property name="SoundDrownPain" value="Player_Female/player2drownpain" />
-		<property name="SoundWaterSurface" value="Player_Female/player2drownsurface" />
-		<property name="SoundDrownDeath" value="Player_Female/player2drowndeath" />
-		<property name="SoundJump" value="Player_Male/player2Jump" />
-		<property name="SoundLandSoft" value="Player_Male/player2LandSoft" />
-		<property name="SoundLandHard" value="Player_Male/player2LandHard" />
-		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
-		<property name="CorpseBlock" value="MeleeBanditCorpse"/>
 	</entity_class>
 	<!-- Traders Start -->
 	<entity_class name="Trader">

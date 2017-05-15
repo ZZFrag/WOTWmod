@@ -134,14 +134,12 @@
 		<entity name="zombieSteveCrawler" />
 		<entity name="fatzombiecop" />
 		<entity name="burntzombie" />
-		<entity name="banditMelee" prob="0.1" />
 		<entity name="BanditBilly" prob="0.1" />
 		<entity name="BanditMichelle" prob="0.1" />
-		<entity name="banditRanged" prob="0.1" />
 		<entity name="BanditSasha" prob="0.1" />
 		<entity name="BanditDwarfSherry" prob="0.1" />
 		<entity name="BanditRoger" prob="0.09"/>
-		<entity name="banditLeader" prob="0.05"/>
+		<entity name="BanditAndre" prob="0.05"/>
 		<entity name="BanditKane" prob="0.05"/>
 		<entity name="BanditShahala" prob="0.025"/>
 	</entitygroup>	
@@ -164,14 +162,12 @@
 		<entity name="burntzombie" />
 		<entity name="zombieBear" />
 		<entity name="zombieferal" />
-		<entity name="banditMelee" prob="0.1" />
 		<entity name="BanditBilly" prob="0.1" />
 		<entity name="BanditMichelle" prob="0.1" />
-		<entity name="banditRanged" prob="0.1" />
 		<entity name="BanditSasha" prob="0.1" />
 		<entity name="BanditDwarfSherry" prob="0.1" />
 		<entity name="BanditRoger" prob="0.09"/>
-		<entity name="banditLeader" prob="0.05"/>
+		<entity name="BanditAndre" prob="0.05"/>
 		<entity name="BanditKane" prob="0.05"/>
 		<entity name="BanditShahala" prob="0.025"/>
 	</entitygroup>
@@ -191,14 +187,12 @@
 		<entity name="zombieArleneCrawler" prob="0.2" />
 		<entity name="zombieJoeCrawler" prob="0.2" />
 		<entity name="zombieBoeCrawler" prob="0.2" />
-		<entity name="banditMelee" prob="0.1" />
 		<entity name="BanditBilly" prob="0.1" />
 		<entity name="BanditMichelle" prob="0.1" />
-		<entity name="banditRanged" prob="0.1" />
 		<entity name="BanditSasha" prob="0.1" />
 		<entity name="BanditDwarfSherry" prob="0.1" />
 		<entity name="BanditRoger" prob="0.09"/>
-		<entity name="banditLeader" prob="0.05"/>
+		<entity name="BanditAndre" prob="0.05"/>
 		<entity name="BanditKane" prob="0.05"/>
 		<entity name="BanditShahala" prob="0.025"/>
 	</entitygroup>
@@ -206,14 +200,12 @@
 	<entitygroup name="ZombiesBurntForestwithBandits">
 		<entity name="burntzombie" prob="0.65"/>
 		<entity name="zombieSteveCrawler" prob="0.2"/>
-		<entity name="banditMelee" prob="0.1" />
 		<entity name="BanditBilly" prob="0.1" />
 		<entity name="BanditMichelle" prob="0.1" />
-		<entity name="banditRanged" prob="0.1" />
 		<entity name="BanditSasha" prob="0.1" />
 		<entity name="BanditDwarfSherry" prob="0.1" />
 		<entity name="BanditRoger" prob="0.09"/>
-		<entity name="banditLeader" prob="0.05"/>
+		<entity name="BanditAndre" prob="0.05"/>
 		<entity name="BanditKane" prob="0.05"/>
 		<entity name="BanditShahala" prob="0.025"/>
 	</entitygroup>
@@ -504,16 +496,14 @@
 	</entitygroup>
 	
 	<entitygroup name="BanditGroup">
-		<entity name="banditMelee" />
 		<entity name="BanditBilly" />
 		<entity name="BanditMichelle" />
-		<entity name="banditRanged" />
 		<entity name="BanditSasha" />
 		<entity name="BanditDwarfSherry" />
-		<entity name="BanditRoger" prob="0.2"/>
-		<entity name="banditLeader" prob="0.2"/>
-		<entity name="BanditKane" prob="0.1"/>
-		<entity name="BanditShahala" prob="0.05"/>
+		<entity name="BanditRoger" />
+		<entity name="BanditAndre" prob="0.2"/>
+		<entity name="BanditKane" />
+		<entity name="BanditShahala" />
 	</entitygroup>
 
 	<entitygroup name="SupplyCrates_General">

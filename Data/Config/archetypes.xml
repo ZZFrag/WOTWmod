@@ -2586,7 +2586,7 @@
 			<gene name="breastSize" value="0.845"/>
 		</dna>
 	</archetype>
-	<archetype name="BanditLeader" male="true" hair_color="148,74,40" eye_color="68,68,60" skin_color="175,175,175" type="None">
+	<archetype name="BanditAndre" male="true" hair_color="148,74,40" eye_color="68,68,60" skin_color="175,175,175" type="None">
 		<base_mesh_parts>
 			<part slot="head" layer="base" mesh="male_base_face">
 				<texture name="male_head" color="skin"/>
