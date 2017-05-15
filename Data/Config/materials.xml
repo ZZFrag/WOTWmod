@@ -806,7 +806,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="MaxDamage" value="1500" />
 	</material>
 	<!-- Fast Road -->
-	<material id="MFastRoad">
+	<material id="MfastRoad">
 		<property name="damage_category" value="stone" />
 		<property name="surface_category" value="stone" />
 		<property name="forge_category" value="stone" />

@@ -263,7 +263,7 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 </block>
 
 <block id="15" name="asphalt">
-	<property name="Material" value="MFastRoad" />
+	<property name="Material" value="MfastRoad" />
 	<property name="MaxDamage" value="1500" />
 	<property name="Shape" value="Terrain" />
 	<property name="Mesh" value="terrain" />
