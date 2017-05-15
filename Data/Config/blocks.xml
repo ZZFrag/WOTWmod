@@ -263,7 +263,7 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 </block>
 
 <block id="15" name="asphalt">
-	<property name="Material" value="Mconcrete" />
+	<property name="Material" value="MFastRoad" />
 	<property name="MaxDamage" value="1500" />
 	<property name="Shape" value="Terrain" />
 	<property name="Mesh" value="terrain" />
@@ -276,10 +276,10 @@ Forge weight: We have auto-scaling based on resources IF there is a recipe for t
 	<drop event="Destroy" name="rockSmall" count="12" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="CanMobsSpawnOn" value="true" />
-	<property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>
+	<!-- A15 <property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>   -->
 	<property name="EconomicValue" value="45" />
 	<property name="EconomicBundleSize" value="20" />
-	</block>
+</block>
 
 <block id="16" name="gravel">
 	<property name="Material" value="Mgravel" />
