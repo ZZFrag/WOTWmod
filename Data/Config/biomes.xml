@@ -3325,32 +3325,32 @@ If you do not declare them, the decorations of the main biome are used.
 	<spectrum name="burnt_forest" />
 </biome>
 
-	<biome name="caveFloor" biomemapcolor="#000000" >
+	<biome name="caveFloor" biomemapcolor="#a1a1a1" >
 		<decorations>
-			<decoration type="prefab" name="rg_cave_spawn_01"				prob="0.00575" rotatemax="7"/>
-			<decoration type="block" blockname="mushroom01"					prob="0.02" rotatemax="7"/>
-			<decoration type="block" blockname="mushroom02"					prob="0.02" rotatemax="7"/>
-			<decoration type="block" blockname="stalagmite01"				prob="0.02" rotatemax="7"/>
-			<decoration type="block" blockname="stalagmite02"				prob="0.02" rotatemax="7"/>
-			<decoration type="block" blockname="stalagmite03"				prob="0.02" rotatemax="7"/>
-			<decoration type="block" blockname="stalagmite04"				prob="0.02" rotatemax="7"/>
-			<decoration type="block" blockname="rockResource"				prob="0.0005" rotatemax="3"/>
-			<decoration type="block" blockname="rockResource02"				prob="0.0005" rotatemax="3"/>
-			<decoration type="block" blockname="cntCorpseLoot02"			prob="0.004" rotatemax="7"/>
-			<decoration type="block" blockname="rock01"						prob="0.004" rotatemax="3"/>
-			<decoration type="block" blockname="campfire"					prob="0.0001" rotatemax="3"/>
-			<decoration type="block" blockname="cntApacheArtifactChest"		prob="0.00075" rotatemax="3"/>
+			<decoration type="prefab" name="rg_cave_spawn_01" prob="0.005" rotatemax="7"/>
+			<decoration type="block" blockname="mushroom01" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="mushroom02" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalagmite01" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalagmite02" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalagmite03" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalagmite04" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="rockResource" prob =".0005" rotatemax="3"/>
+			<decoration type="block" blockname="rockResource02" prob =".0005" rotatemax="3"/>
+			<decoration type="block" blockname="cntCorpseLoot02" prob="0.004" rotatemax="7"/>
+			<decoration type="block" blockname="rock01" prob=".004" rotatemax="3"/>
+			<decoration type="block" blockname="campfire" prob=".00004" rotatemax="3"/>
+			<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>
 		</decorations>
 	</biome>
 
-	<biome name="caveCeiling" biomemapcolor="#191919" >
+	<biome name="caveCeiling" biomemapcolor="#a2a2a2" >
 		<decorations>
-			<decoration type="block" blockname="cobweb"			prob="0.12" rotatemax="7"/>
-			<decoration type="block" blockname="hangingMoss"	prob="0.12" rotatemax="7"/>
-			<decoration type="block" blockname="stalactite01"	prob="0.021" rotatemax="7"/>
-			<decoration type="block" blockname="stalactite02"	prob="0.021" rotatemax="7"/>
-			<decoration type="block" blockname="stalactite03"	prob="0.021" rotatemax="7"/>
-			<decoration type="block" blockname="stalactite04"	prob="0.021" rotatemax="7"/>
+			<decoration type="block" blockname="cobweb" prob="0.12" rotatemax="7"/>
+			<decoration type="block" blockname="hangingMoss" prob="0.12" rotatemax="7"/>
+			<decoration type="block" blockname="stalactite01" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalactite02" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalactite03" prob="0.02" rotatemax="7"/>
+			<decoration type="block" blockname="stalactite04" prob="0.02" rotatemax="7"/>
 		</decorations>
 	</biome>
 
@@ -3383,12 +3383,12 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="13" face="0" prob="0.001" />
 		<decal texture="14" face="0" prob="0.001" />
 		<decal texture="15" face="0" prob="0.001" />
-		<blockontop blockname="lootStreet" prob="0.0015" rotatemax="7"/>
-		<blockontop blockname="randomCars" prob="0.001" rotatemax="3"/>
-		<blockontop blockname="tire" rotatemax="3" prob="0.00075" />
-		<!-- <blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0002" />
-		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0002" /> -->
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.00015" />
+		<blockontop blockname="lootStreet" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="randomCars" prob="0.0015" rotatemax="3"/>
+		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
+		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
+		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
+		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
 		<blockontop blockname="rock01" prob="0.0007" />
 		<blockontop blockname="rock02" prob="0.0007" />
 		<blockontop blockname="rock04"  prob="0.0007" />
@@ -3410,15 +3410,15 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="13" face="0" prob="0.005" />
 		<decal texture="14" face="0" prob="0.005" />
 		<decal texture="15" face="0" prob="0.005" />
-		<blockontop blockname="lootStreet" prob="0.0015" rotatemax="7"/>
-		<blockontop blockname="randomCars" prob="0.001" rotatemax="3"/>
-		<blockontop blockname="tire" rotatemax="3" prob="0.00075" />
-		<!-- <blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0002" />
-		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0002" /> -->
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.00015" />
-		<blockontop blockname="rock01" prob="0.0005" />
-		<blockontop blockname="rock02" prob="0.0005" />
-		<blockontop blockname="rock04" prob="0.0005" />
+		<blockontop blockname="lootStreet" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="randomCars" prob="0.0015" rotatemax="3"/>
+		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
+		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
+		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
+		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
+		<blockontop blockname="rock01" prob="0.0007" />
+		<blockontop blockname="rock02" prob="0.0007" />
+		<blockontop blockname="rock04" prob="0.0007" />
 		<!--blockontop blockname="potassiumNitrate" prob="0.02" offset="-1"/-->
 	</poi>
 	<poi name="Road Gravel" poimapcolor="#806f52" blockname="gravel" >
@@ -3438,9 +3438,9 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="13" face="0" prob="0.005" />
 		<decal texture="14" face="0" prob="0.005" />
 		<decal texture="15" face="0" prob="0.005" />
-		<blockontop blockname="lootStreet" prob="0.0015" rotatemax="7"/>
-		<blockontop blockname="treeBrownGrassDiagonal" rotatemax="3" prob="0.045" />
-		<blockontop blockname="randomCars" prob="0.00075" rotatemax="3"/>
+		<blockontop blockname="lootStreet" prob="0.001" rotatemax="7"/>
+		<blockontop blockname="treeBrownGrassDiagonal" rotatemax="3" prob="0.05" />
+		<blockontop blockname="randomCars" prob="0.0005" rotatemax="3"/>
 		<!--blockontop blockname="potassiumNitrate" prob="0.02" offset="-1"/-->
 	</poi>
 	<poi name="Water" poimapcolor="#0063ff" blockname="water" blockbelow="sand" yposfill="58" />
