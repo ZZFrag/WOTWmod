@@ -601,7 +601,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="autogendertest" duration="1" castsound="Player_*painlg1"/>
 
-<buff id="asphaltStaBoostTrigger" duration="1" actions="setvar(CTRroadrun, 10)" />
+<buff id="asphaltStaBoostTrigger" requires="isPlayer" duration="1" actions="setvar(CTRroadrun, 10)" />
 
 <buff id="asphaltStaminaEffect" duration="0" buffif="CTRroadrun greater 0" debuffif="CTRroadrun less 1" actions="increment(CTRroadrun, -1, 1, 0, 0)" >
 	<modify id="0" stat="stamina" amount="1" rate="2"/>
