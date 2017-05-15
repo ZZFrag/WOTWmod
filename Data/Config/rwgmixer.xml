@@ -326,7 +326,7 @@
 
 	
 	<wilderness_rules>
-		<wilderness_rule name="wildernessDefault" spawn_min_max="75,100">  <!-- minimun and maximun wildernessPOI's -->
+		<wilderness_rule name="wildernessDefault" spawn_min_max="85,115">  <!-- minimun and maximun wildernessPOI's -->
 			<path_material value="asphalt" /> 
 			<path_radius value="2" />
 			<prefab_rule name="wildernessPOIs" prob="1"/>
@@ -557,8 +557,8 @@
 		
 		<prefab_rule name="W_POIs_common_Set_A">
 			<prefab rule="trader_settlements" min_count="1" max_count="1" prob="0.5"/>
-			<prefab rule="A_frame_houses" max_count="1" prob="0.2" />		
-			<prefab rule="barnsAndSheds" max_count="1" prob="0.3" />
+			<prefab rule="A_frame_houses" max_count="2" prob="0.2" />		
+			<prefab rule="barnsAndSheds" max_count="2" prob="0.3" />
 			<prefab rule="militaryCamps" max_count="1" prob="0.2" />
 			<prefab name="xcostum_Polarstation(by_magoli)" max_count="1" prob="0.4" />			
 			<prefab name="xcostum_WWHouse(by_IceJudge)" max_count="1" prob="0.4"/>
@@ -568,38 +568,38 @@
 			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" prob="0.2" />			
 			<prefab name="xvanilla_bombshelter_lg_01" max_count="1" prob="0.2" />
 			<prefab name="xcostum_FuneralParlor(by_Zombieman)" max_count="1" prob="0.1" />
-			<prefab rule="TrailerHouses" max_count="1" prob="0.1" />
+			<prefab rule="TrailerHouses" max_count="2" prob="0.1" />
 			<prefab name="xcostum_ShoppingCenterMall(by_Warsaken)" max_count="1" prob="0.1" />
 		</prefab_rule>		
 
 		<prefab_rule name="W_POIs_common_Set_B">
 			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" prob="0.3" />
 			<prefab name="prison_HighSecurity" max_count="1" prob="0.25" />
-			<prefab rule="campsites" max_count="1" prob="0.3" />
-			<prefab rule="cabins" max_count="1" prob="0.5" />		
+			<prefab rule="campsites" max_count="2" prob="0.3" />
+			<prefab rule="cabins" max_count="2" prob="0.5" />		
 			<prefab name="xcostum_Villa(by_Limodor)" max_count="1" prob="0.4"/>		
 			<prefab name="xvanilla_house_new_mansion_02" max_count="1" prob="0.2" />
 			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" prob="0.4" />
 			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_Stonehenge(by_magoli)" max_count="1" prob="0.2" />
-			<prefab name="xvanilla_church_graveyard1" max_count="1" prob="0.3" />
+			<prefab name="xvanilla_church_graveyard1" max_count="2" prob="0.3" />
 			<prefab name="xcostum_Treehouse_sm(by_magoli)" max_count="1" prob="0.2" />
-			<prefab rule="burntHousing" max_count="1" prob="0.2" />
+			<prefab rule="burntHousing" max_count="2" prob="0.2" />
 			<prefab name="xvanilla_junkyard_lg" max_count="1" prob="0.1" />
 			<prefab name="xcostum_TheMill(by_MoNKeYest1)" max_count="1" prob="0.1" />
 		</prefab_rule>
 		
 		<prefab_rule name="W_POIs_common_Set_C">
 			<prefab rule="waterPOIs" max_count="1" prob="0.4" />
-			<prefab rule="abandoned_houses" max_count="1" prob="0.4" />
+			<prefab rule="abandoned_houses" max_count="2" prob="0.4" />
 			<prefab name="xcostum_Cabin(by_Sudo)" max_count="1" prob="0.4"/>		
-			<prefab name="xvanilla_house_new_mansion_03" max_count="1" prob="0.3" />		
-			<prefab name="xvanilla_ranger_station1" max_count="1" prob="0.2" />
+			<prefab name="xvanilla_house_new_mansion_03" max_count="2" prob="0.3" />		
+			<prefab name="xvanilla_ranger_station1" max_count="2" prob="0.2" />
 			<prefab name="xcostum_PersianMansion(by_saeid)" max_count="1" prob="0.3" />
 			<prefab name="xcostum_burialshrine(by_snake0567)" max_count="1" prob="0.2" />
 			<prefab name="xvanilla_indian_burial_grounds_01" max_count="1" prob="0.2" />
-			<prefab name="xvanilla_graveyard_sm" max_count="1" prob="0.2" />
-			<prefab rule="countryHousing" max_count="1" prob="0.2" />
+			<prefab name="xvanilla_graveyard_sm" max_count="2" prob="0.2" />
+			<prefab rule="countryHousing" max_count="2" prob="0.2" />
 			<prefab name="xcostum_ShoppingCenterShops(by_Warsaken)" max_count="1" prob="0.1" />
 		</prefab_rule>
 
@@ -2081,7 +2081,7 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,10500"/> 
+			<distance_from_center range="10000,11000"/> 
 		</biome_spawn_rule>
 
 		<!-- Center Wasteland (Overwrites All) -->
