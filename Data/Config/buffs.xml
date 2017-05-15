@@ -471,7 +471,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <!-- Beer Buffs -->
 
-
 <buff id="DrinkBeer" duration="1" actions="increment(beers, 1, 0, 0, 1)">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
@@ -519,7 +518,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 
 <!-- Temperature Type Buffs -->
-
 
 <buff id="warmByFire" duration="0" stack="discard" buffif="+heatSource gequal 1" debuffif="+heatSource less 1" type="coretemp"
 	icon="ui_game_symbol_campfire" name_key="warmByFire" description_key="warmByFireDesc" tooltip_key="warmByFireTooltip">
@@ -577,7 +575,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <!-- Player Type Buffs -->
 
-
 <buff id="isPlayer" buffif="+full > 0" />
 
 <buff id="wet" notificationClass="WetBuffNotification" duration="0" stack="discard" buffif="waterLevel greater 0" debuffif="waterLevel equals 0"
@@ -601,22 +598,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="autogendertest" duration="1" castsound="Player_*painlg1"/>
 
-<buff id="asphaltStaBoostTrigger" duration="1" actions="setvar(CTRroadrun, 10)" />
-
-<buff id="asphaltStaminaEffect" duration="0" buffif="CTRroadrun greater 0" debuffif="CTRroadrun less 1" actions="increment(CTRroadrun, -1, 1, 0, 0)" >
-	<modify id="0" stat="stamina" amount="1" rate="2"/>
-</buff>
-
-<!-- GTC
-<buff id="asphaltStaminaEffect" duration="0" buffif="CTRroadrun greater 0" debuffif="CTRroadrun less 1" actions="increment(CTRroadrun, -1, 1, 0, 0)"
-	icon="ui_game_symbol_run" name_key="Road Runner" description_key="Meep meep!" tooltip_key="Meep meep!">
-	<modify id="0" stat="stamina" amount="1" rate="1"/>
-</buff>
--->
-
-
 <!-- Movement Impairing Buffs -->
-
 
 <buff id="brokenLeg" duration="9000" stack="reset" actions="debuff(firstAid);debuff(splint);debuff(sprainedLeg);buff(lossImmunity_xsmall_Trigger)" type="speedmodifier"
 	icon="ui_game_symbol_brokenbone" name_key="brokenLeg" description_key="brokenLegDesc" tooltip_key="brokenLegTooltip" cures="splint,AdvancedSplint">
