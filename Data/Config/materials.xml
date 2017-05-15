@@ -813,7 +813,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="stone" />
 		<property name="stability_glue" value="90" />
-		<property name="movement_factor" value="1.2" />
+		<property name="movement_factor" value="1.3" />
 		<property name="Mass" type="int" value="15" />
 		<property name="explosionresistance" value=".30" />
 		<property name="MaxDamage" value="6000" />
