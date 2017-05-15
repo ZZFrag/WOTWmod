@@ -1462,17 +1462,13 @@
 	</entity_class>
 	<!-- Bandits Start -->
 	<entity_class name="banditMelee">
-		<!-- This one decides for scoring -->
-		<!-- <property name="EntityType" value="Player" /> -->
 		<property name="EntityType" value="Zombie"/>
 		<!-- Mesh and class properties -->
-		<!-- <property name="Mesh" value="Player/Male/player_maleRagdoll" /> -->
 		<property name="AvatarController" value="AvatarUMAController" />
 		<property name="ModelType" value="NpcUMA" />
 		<property name="HasRagdoll" value="true" />
 		<property name="Prefab" value="NPC" />
 		<property name="Class" value="EntityNPC" />
-		<!-- <property name="Parent" value="Players" /> -->
 		<property name="Parent" value="Enemies"/>
 		<property name="PhysicsBody" value="Player" />
 		<property name="Archetype" value="BanditMelee"/>
@@ -1522,18 +1518,6 @@
 		<property name="ExperienceGain" value="1500"/>
 		<property name="DeadBodyHitPoints" value="15" />
 		<property name="HasDeathAnim" value="true" />
-	</entity_class>
-	<entity_class name="animalBearUMA" extends="animalBear">
-		<property name="Archetype" value="BearBase"/>
-		<property name="Mesh" value="Player/Male/player_maleRagdoll" />
-		<property name="AvatarController" value="AvatarZombieUMAController" />
-		<property name="ModelType" value="BearUMA" />
-		<property name="HasRagdoll" value="true" />
-		<property name="Prefab" value="NPC" />
-		<property name="Weight" value="300" />
-		<property name="RotateToGround" value="true"/>
-		<property name="IsEntityAnimal" value="true" />
-		<property name="PhysicsBody" value="bear" />
 	</entity_class>
 	<entity_class name="banditRanged" extends="banditMelee">
 		<property name="Archetype" value="BanditRanged"/>
