@@ -1940,29 +1940,27 @@
 	
 	</terrain_generators>
 
-<biome_generators>	
+	<biome_generators>
 		<biome_generator name="vanilla">
-		
 			<module name="voronoi" type="Voronoi">
-				<property name="frequency" value="0.0008"/> <!-- lower to have bigger biomes *A little goes a long way* -->
-				<property name="displacement" value="0.5"/>  
+				<property name="frequency" value="0.0008"/>
+				<property name="displacement" value="0.5"/>
 			</module>
-
 			<module name="biasOutput" type="BiasOutput">
 				<property name="sourceModule" value="voronoi"/>
-				<property name="bias" value="0.25"/>
+				<property name="bias" value="0.5"/>
 			</module>
 			
 			<module name="biomeDither" type="FastTurbulence">
 				<property name="sourceModule" value="biasOutput"/>
-				<property name="frequency" value="0.32"/>
+				<property name="frequency" value="0.25"/>
 				<property name="power" value="8"/>
-				<property name="roughness" value="6"/>
+				<property name="roughness" value="5"/>
 			</module>
 			
 			<module name="biomeJiggle" type="FastTurbulence">
 				<property name="sourceModule" value="biomeDither"/>
-				<property name="frequency" value="0.0018"/>
+				<property name="frequency" value="0.0016"/>
 				<property name="power" value="400"/>
 				<property name="roughness" value="1"/>
 			</module>
@@ -1974,7 +1972,7 @@
 			
 			<output module="clampOutput"/>
 		</biome_generator>
-</biome_generators>
+	</biome_generators>
 
 	<biome_spawn_rules>
 
