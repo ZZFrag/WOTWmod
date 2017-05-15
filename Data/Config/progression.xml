@@ -3,18 +3,16 @@
 <progression>
 <player 
 	max_level="200" 
-	exp_to_level="7500"
-	experience_multiplier="1.00954" 
-	skill_points_per_level="3" 
-	skill_point_multiplier="1.05"/>
-	<!-- that's 4000 XP for level 1 and 56k for level 199, total cumulative of 3.97MXP -->
-	<!-- 1.514 Million Exp Required for Level 200 -->
-	<!-- 900 Skill Points Total at Level 200 -->
+	exp_to_level="8000" 
+	experience_multiplier="1.0142" 
+	skill_points_per_level="5" 
+	skill_point_multiplier="0"/>
+	<!-- that's 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP aka 2x of A15.0 -->
 
 <skills 
 	max_level="100" 
 	exp_to_level="250" 
-	experience_multiplier="1.02" 
+	experience_multiplier="1.03" 
 	skill_point_cost_multiplier="0"
 	skill_point_cost_per_level="1" > <!-- these are defaults and can be used to modify individual skills as needed -->
 
