@@ -356,7 +356,6 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="stone" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="stone" />
-	<property name="movement_factor" value="1.25" />
 	<property name="stability_glue" value="90" />
 	<property name="Mass" type="int" value="15" />
 	<property name="explosionresistance" value=".20" />
@@ -878,14 +877,14 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 <material id="MFastRoad">
 	<property name="damage_category" value="stone" />
 	<property name="surface_category" value="stone" />
+	<property name="forge_category" value="stone" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="stone" />
 	<property name="stability_glue" value="90" />
 	<property name="movement_factor" value="1.2" />
-      <property name="fertile_level" value="1" />
 	<property name="Mass" type="int" value="15" />
-	<property name="explosionresistance" value=".25" />
-	<property name="MaxDamage" value="30000" />
+	<property name="explosionresistance" value=".30" />
+	<property name="MaxDamage" value="6000" />
 </material>
 <!-- Materials for blocks that are not supposed to stick to walls. -->
 <!-- There are not many of those so define individual hit points in blocks.xml. -->
